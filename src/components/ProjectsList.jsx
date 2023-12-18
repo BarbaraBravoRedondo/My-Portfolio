@@ -1,11 +1,8 @@
 import projectsData from '../data/Projects';
+import TechIconos from './TechIconos';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/scss';
-
 import '../styles/ProjectList.scss';
-import TechIconos from './TechIconos';
-
-import { Navigation, Autoplay } from 'swiper';
 
 // Importa las imágenes necesarias para tus proyectos aquí...
 import gnomes from '../images/gnomes.png';
@@ -28,13 +25,12 @@ function ProjectList() {
 
   return (
     <main>
-      <Swiper 
-      controlers
-      spaceBetween={30} 
-      slidesPerView={1} 
-      loop 
-      navigation
-      autoplay={true}
+      <Swiper
+        spaceBetween={120}
+        slidesPerView={1}
+        loop
+        navigation
+        autoplay={true}
       >
         {projectsData.map((project) => {
           const imgSrc = imgSrcMap[project.nameimg] || '';
