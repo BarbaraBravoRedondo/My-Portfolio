@@ -1,0 +1,28 @@
+@import "core/reset";
+@import "core/variables";
+@import "core/mediaqueries";
+@import "core/links";
+@import "core/iconos";
+@import "core/fonts";
+
+.footer {
+  &__nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0.35em;
+    @include desktop {
+      justify-content: flex-end;
+    }
+    &__iconos {
+      color: $darkcolor;
+      padding: 0.3em;
+      background-color: $mediumcolor;
+      border-radius: 100em;
+      &:hover {
+        background-color: $maincolor;
+        transition: 0.8s ease;
+      }
+    }
+  }
+}

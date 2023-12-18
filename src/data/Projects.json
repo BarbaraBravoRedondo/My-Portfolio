@@ -1,0 +1,70 @@
+[
+    {
+      "title": "Gnomes-War",
+      "subtitle": "Own proyect in Adalab",
+      "tecnologies": "html, css, JS",
+      "nameimg": "gnomes",
+      "description": "'GNOMES WAR' is a playful rock-paper-scissors game featuring emojis representing elements—🍃 (plant), 🔥 (fire), and 💧 (water). Test your luck against the computer's random choices in this fun battle…",
+      "github": "https://github.com/BarbaraBravoRedondo/Gnomes-War",
+      "page": "https://barbarabravoredondo.github.io/Gnomes-War/",
+      "year": 2023,
+      "id": 1
+    },
+    {
+      "title": "Hangman",
+      "subtitle": "Pair programming",
+      "tecnologies": "html, css, react, API ,",
+      "nameimg": "hangman",
+      "description": "Multiplayer Hangman & classic single-player game in one repo! Code, assets, networking for a fun word-guessing experience. Challenge friends or play solo. Enjoy word-solving excitement together!",
+      "github": "https://github.com/BarbaraBravoRedondo/Hangman",
+      "page":"https://barbarabravoredondo.github.io/Hangman/",
+      "year": 2023,
+      "id": 2
+    },
+    {
+      "title": "Owen Wilson's WOW",
+      "subtitle": "Individual proyect in Adalab",
+      "tecnologies": "html, css,react, API REST",
+      "nameimg": "owen-wilson",
+      "github": "https://github.com/BarbaraBravoRedondo/Owen-Wilson-Wow",
+      "description": "Owens Wilson's Wow. This website is a search engine for movies in which the actor pronounced 'WOW'",
+      "page": "https://barbarabravoredondo.github.io/Owen-Wilson-Wow/",
+      "year": 2023,
+      "id": 3
+    },
+    {
+      "title": "SeriesFavoritas",
+      "subtitle": "Individual project in Adalab",
+      "tecnologies": "html, css, JS,API REST,",
+      "nameimg": "series",
+      "description": "Manage Your Favorite Series: Explore, search, and save your favorite TV series in the favorites's section. Each series includes a trash can icon for easy removal from your list.",
+      "github": "https://github.com/BarbaraBravoRedondo/SeriesFavoritas",
+      "page": "https://barbarabravoredondo.github.io/SeriesFavoritas/",
+      "year": 2023,
+      "id": 4
+    },
+    {
+      "title": "Awsome-Cards",
+      "subtitle": "Group project",
+      "tecnologies": "HTML, CSS, Scss, JS, API,postman,",
+      "nameimg": "cards",
+      "description": "Create your own personal card and share it in twitter.",
+      "github": "https://github.com/BarbaraBravoRedondo/Awesome-Cards",
+      "page": "https://barbarabravoredondo.github.io/Awesome-Cards/",
+      "year": 2023,
+      "id": 5
+    },
+ 
+    {
+      "title": "Whack-a-Mario",
+      "subtitle": "First own project",
+      "tecnologies": "CSS, SCSS, HTML,JS,",
+      "nameimg": "mario",
+      "description": "Whack-a-Mario aims to recreate the fun gameplay of Whack-a-Mole but with a Mario Bros twist. The game includes visual designs that incorporate elements from the Super Mario franchise.",
+      "github": "https://github.com/BarbaraBravoRedondo/Awesome-Cards",
+      "page": "https://barbarabravoredondo.github.io/Awesome-Cards/",
+      "year": 2023,
+      "id": 6
+    }
+  ]
+  

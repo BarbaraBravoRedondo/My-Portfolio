@@ -1,0 +1,33 @@
+@import "core/reset";
+@import "core/variables";
+@import "core/mediaqueries";
+@import "core/links";
+@import "core/iconos";
+@import "core/fonts";
+
+.tech {
+  color: $maincolor;
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  &__img {
+    height: 1.5em;
+    object-fit: contain;
+    &__mvl {
+      display: contents;
+      @include desktop {
+        display: none;
+      }
+    }
+    &__dsk {
+      display: none;
+      @include desktop {
+        display: contents;
+      }
+    }
+  }
+
+  @include desktop {
+    color: white;
+  }
+}

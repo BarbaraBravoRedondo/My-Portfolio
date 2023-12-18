@@ -1,0 +1,67 @@
+@import "core/reset";
+@import "core/variables";
+@import "core/mediaqueries";
+@import "core/links";
+@import "core/iconos";
+@import "core/fonts";
+
+
+
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: $lightcolor;
+;
+  &__dsk {
+    @include desktop {
+      display: none;
+    }
+  }
+  &__tab {
+    display: none;
+    @include desktop {
+      display: contents;
+    }
+  }
+
+  &__img {
+    margin: 1em;
+    object-fit:cover;
+    max-width: 30vh;
+    @include desktop {
+      max-width: 60vh;
+      margin: 1rem;
+    }
+  }
+  &__circle {
+    border-radius: 50rem;
+    aspect-ratio: 1/1;
+    background-color: $mediumcolor;
+  }
+  &__overlay {
+    display: none;
+    @include desktop {
+      display: contents;
+      height: 100%;
+      padding: 2rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: $mediumcolor;
+      opacity: 0;
+      transition: opacity 0.8s;
+      &:hover {
+        opacity: 0.94;
+        cursor: pointer;
+      }
+    }
+  }
+}
