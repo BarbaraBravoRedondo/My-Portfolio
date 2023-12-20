@@ -1,10 +1,13 @@
 import projectsData from '../data/Projects';
 import TechIconos from './TechIconos';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
-import "swiper/modules/navigation/navigation.min.css"
-import { Navigation } from 'swiper/react'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+
+//  import "swiper/modules/navigation/navigation"
+ import { Navigation } from 'swiper'
 import '../styles/ProjectList.scss';
 
 // Importa las imágenes necesarias para tus proyectos aquí...
@@ -28,12 +31,18 @@ function ProjectList() {
 
   return (
     <main>
-      <Swiper
-        spaceBetween={30}
+      <Carousel
+
+        spaceBetween={50}
         slidesPerView={1}
+        showStatus={false} 
+        autoplay={{ delay:300}}
         loop
-        navigation
-        autoplay={true}
+        navigation={true}
+        emulateTouch={true}
+        onSlideChange={() =>console.log("slide change")}
+        onSwiper={swiper =>console.log(swiper)}
+      
       >
         {projectsData.map((project) => {
           const imgSrc = imgSrcMap[project.nameimg] || '';
@@ -50,6 +59,8 @@ function ProjectList() {
                 <section className="project__overlay project__circle">
                   <h2>{project.title}</h2>
                   <TechIconos tecnologies={project.tecnologies} />
+                  <a href={project.page}    target="_blank"
+                    rel="noopener noreferrer">WEB</a>
                 </section>
                 <img
                   className="project__img project__circle"
@@ -58,12 +69,20 @@ function ProjectList() {
                 />
                 <div className="project__dsk">
                   <TechIconos tecnologies={project.tecnologies} />
+                  <a
+                    href={project.page} // Reemplaza 'project.webpage' con la propiedad correcta que contiene la URL del proyecto
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Web
+                  </a>
                 </div>
               </a>
+              
             </SwiperSlide>
           );
         })}
-      </Swiper>
+      </Carousel>
     </main>
   );
 }
