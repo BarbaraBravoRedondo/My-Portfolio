@@ -1,7 +1,10 @@
 import projectsData from '../data/Projects';
 import TechIconos from './TechIconos';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/scss';
+import 'swiper/swiper-bundle.min.css'
+import 'swiper/swiper.min.css'
+import "swiper/modules/navigation/navigation.min.css"
+import { Navigation } from 'swiper/react'
 import '../styles/ProjectList.scss';
 
 // Importa las imágenes necesarias para tus proyectos aquí...
@@ -26,7 +29,7 @@ function ProjectList() {
   return (
     <main>
       <Swiper
-        spaceBetween={120}
+        spaceBetween={30}
         slidesPerView={1}
         loop
         navigation
