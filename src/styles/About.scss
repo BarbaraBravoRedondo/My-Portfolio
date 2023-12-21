@@ -25,9 +25,16 @@
 
 .project {
   &__img {
-    width: 40rem;
+    width: 13rem;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 0 15px 5px rgba(238, 238, 193, 0.859);
+    box-shadow: 0 0 15px 5px rgba(238, 238, 193, 0.859);  
+    @include tablet {
+    width: 50rem;
+
   }
+  
+  }
+
+  
 }
