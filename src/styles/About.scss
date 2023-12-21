@@ -1,9 +1,9 @@
-@import "core/reset";
-@import "core/variables";
-@import "core/mediaqueries";
-@import "core/links";
-@import "core/iconos";
-@import "core/fonts";
+@import 'core/reset';
+@import 'core/variables';
+@import 'core/mediaqueries';
+@import 'core/links';
+@import 'core/iconos';
+@import 'core/fonts';
 
 .about {
   display: flex;
@@ -13,7 +13,6 @@
     padding: 3em;
   }
 
-  
   &__txt {
     text-align: center;
     margin-bottom: 3.5rem;
@@ -21,12 +20,14 @@
     &__parg {
       margin-top: 2rem;
     }
-  }}
+  }
+}
 
-.project{
+.project {
   &__img {
     width: 40rem;
-  border-radius: 50%;
-  object-fit:cover;
-  box-shadow: 0 0 15px 5px rgba(238, 238, 193, 0.859);
-;}}
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 15px 5px rgba(238, 238, 193, 0.859);
+  }
+}

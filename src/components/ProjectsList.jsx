@@ -31,7 +31,10 @@ function ProjectList() {
 
   return (
     <main>
-      <Carousel
+      <Carousel 
+        showIndicators={false}
+        showThumbs={false}
+      
 
         spaceBetween={50}
         slidesPerView={1}
@@ -48,38 +51,36 @@ function ProjectList() {
           const imgSrc = imgSrcMap[project.nameimg] || '';
 
           return (
-            <SwiperSlide key={project.id}>
+            <div key={project.id}>
+            <div className="link2 item project">
               <a
-                className="link2 item project"
                 href={project.github}
                 title={`ir al proyecto ${project.title}`}
                 target="_blank"
                 rel="noreferrer"
+                className="project__overlay project__circle"
               >
-                <section className="project__overlay project__circle">
-                  <h2>{project.title}</h2>
-                  <TechIconos tecnologies={project.tecnologies} />
-                  <a href={project.page}    target="_blank"
-                    rel="noopener noreferrer">WEB</a>
-                </section>
-                <img
-                  className="project__img project__circle"
-                  src={imgSrc}
-                  alt=""
-                />
-                <div className="project__dsk">
-                  <TechIconos tecnologies={project.tecnologies} />
-                  <a
-                    href={project.page} // Reemplaza 'project.webpage' con la propiedad correcta que contiene la URL del proyecto
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Web
-                  </a>
-                </div>
+                <h2>{project.title}</h2>
+                <TechIconos tecnologies={project.tecnologies} />
+                <a href={project.page} target="_blank" rel="noopener noreferrer">WEB</a>
               </a>
-              
-            </SwiperSlide>
+              <img
+                className="project__img project__circle"
+                src={imgSrc}
+                alt=""
+              />
+              <div className="project__dsk">
+                <TechIconos tecnologies={project.tecnologies} />
+                <a
+                  href={project.page}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Web
+                </a>
+              </div>
+            </div>
+          </div>
           );
         })}
       </Carousel>

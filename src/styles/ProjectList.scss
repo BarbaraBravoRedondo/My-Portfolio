@@ -1,12 +1,9 @@
-@import "core/reset";
-@import "core/variables";
-@import "core/mediaqueries";
-@import "core/links";
-@import "core/iconos";
-@import "core/fonts";
-
-
-
+@import 'core/reset';
+@import 'core/variables';
+@import 'core/mediaqueries';
+@import 'core/links';
+@import 'core/iconos';
+@import 'core/fonts';
 
 .project {
   display: flex;
@@ -14,13 +11,14 @@
   align-items: center;
   flex-direction: column;
   color: $lightcolor;
-; & a{
-  text-decoration: none;
-  color:black;
-  margin: 10px;
-
-
-}
+  margin: 30px;
+  padding: 10px;
+  & a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    font-weight: bold;
+  }
   &__dsk {
     @include desktop {
       display: none;
@@ -35,10 +33,18 @@
 
   &__img {
     margin: 1em;
-    object-fit:cover;
-    max-width: 30vh;
+    height: 100%;
+    max-width: 60vh;
+    @include tablet {
+      max-width: 40vh;
+      margin: 2rem;
+    }
     @include desktop {
       max-width: 60vh;
+      margin: 1rem;
+    }
+    @include LDesktop {
+      max-width: 50vh;
       margin: 1rem;
     }
   }
@@ -48,6 +54,10 @@
     background-color: $mediumcolor;
   }
   &__overlay {
+    max-width: 90%; /* Ajustar el ancho máximo */
+    max-height: 90%;
+    padding: 20px;
+    margin: 20px;
     display: none;
     @include desktop {
       display: contents;
@@ -56,7 +66,7 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-52%, -50%);
       display: flex;
       flex-direction: column;
       justify-content: center;

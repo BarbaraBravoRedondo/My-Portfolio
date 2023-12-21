@@ -1,11 +1,12 @@
-@import "core/reset";
-@import "core/variables";
-@import "core/mediaqueries";
-@import "core/links";
-@import "core/iconos";
-@import "core/fonts";
+@import 'core/reset';
+@import 'core/variables';
+@import 'core/mediaqueries';
+@import 'core/links';
+@import 'core/iconos';
+@import 'core/fonts';
 
 .footer {
+  height: fit-content;
   &__nav {
     width: 100%;
     display: flex;

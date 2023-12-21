@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import "../styles/Contact.scss";
+import '../styles/Contact.scss';
 
 function Contact() {
   const [email, setEmail] = useState('');
@@ -52,4 +52,3 @@ function Contact() {
 }
 
 export default Contact;
-

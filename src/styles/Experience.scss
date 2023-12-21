@@ -1,0 +1,102 @@
+@import "core/variables";
+@import "core/mediaqueries";
+
+
+.main_sectionExperience {
+    background-image: url("./../images/experience.png");
+    background-size: cover;
+    background-position: center center;
+    color: $color-grey-dark;
+    background-color: $darkcolor;
+    scroll-margin-top: 50px;
+    padding-bottom: 30px;
+    color:$mediumcolor;
+  
+    &_title {
+      text-align: center;
+      font-weight: 900;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-size: 20px;
+      color: $color-grey-light;
+      padding: 15px;
+      span {
+        color: $color-grey-dark;
+      }
+      @include tablet {
+        font-size: 36px;
+        padding: 30px;
+      }
+    }
+
+    &_list {
+      padding: 0px 25px;
+      max-width: 1400px;
+      margin: auto;
+      &-element {
+        &-dot {
+          @include tablet {
+            width: 15px;
+            height: 15px;
+            background-color: $color-yellow-light;
+            border-radius: 7.5px;
+            position: absolute;
+            left: 49%;
+          }
+       
+          
+          @include desktop {
+      left: 49.2%;
+          }
+          @include LDesktop{
+                  left: 49.6%;
+          }
+        }
+        &:nth-child(even) {
+          text-align: left;
+          @include tablet {
+            margin-left: 49.78%;
+            padding-left: 30px;
+            padding-right: 100px;
+            border-left: solid 2px $color-yellow-light;
+          }
+          @include desktop {
+            margin-left: 49.82%;
+          }
+        }
+        &:nth-child(odd) {
+          text-align: right;
+          @include tablet {
+            margin-right: 50%;
+            padding-right: 30px;
+            padding-left: 100px;
+            border-right: solid 2px $color-yellow-light;
+            &.last {
+              border-right: solid 0px;
+            }
+          }
+        }
+        &-date {
+          color: $color-yellow-light;
+          font-weight: bold;
+          font-size: 14px;
+          padding-bottom: 5px;
+          text-transform: uppercase;
+        }
+        &-job {
+          padding-bottom: 5px;
+        }
+        &-company {
+          padding-bottom: 5px;
+          font-weight: inherit;
+        }
+        &-description {
+          font-size: 16px;
+          font-weight: lighter;
+          padding-bottom: 20px;
+          text-align: justify;
+          color:$lightcolor
+        }
+      }
+    }
+  }

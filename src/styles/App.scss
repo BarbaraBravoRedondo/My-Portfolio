@@ -1,11 +1,10 @@
-
 //styles to each component
-@import "core/reset";
-@import "core/variables";
-@import "core/mediaqueries";
-@import "core/links";
-@import "core/iconos";
-@import "core/fonts";
+@import 'core/reset';
+@import 'core/variables';
+@import 'core/mediaqueries';
+@import 'core/links';
+@import 'core/iconos';
+@import 'core/fonts';
 
 body {
   background-color: $darkcolor;
@@ -13,7 +12,7 @@ body {
 }
 
 .wrapper {
-  padding: 5vh 7vh;
+  padding: 5vh 8vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

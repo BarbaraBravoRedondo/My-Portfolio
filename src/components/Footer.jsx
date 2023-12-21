@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import "../styles/Footer.scss";
-import NavFooter from "./NavFooter";
+import { Link } from 'react-router-dom';
+import '../styles/Footer.scss';
+import NavFooter from './NavFooter';
 
 function Footer() {
   return (

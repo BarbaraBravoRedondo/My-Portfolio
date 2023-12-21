@@ -1,19 +1,19 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-import "../styles/Header.scss";
+import '../styles/Header.scss';
 
 function Header() {
   return (
     <header className="header">
       <Link className="link" to="/" title="ir a home">
-        <p className='name'>Bárbara BR</p>
+        <p className="name">Bárbara BR</p>
       </Link>
 
       <nav>
         <ul className="header__nav">
           <li>
             <Link className="link" to="/about-me" title="ir a sobre mí">
-ABOUT
+              ABOUT
             </Link>
           </li>
           <li>

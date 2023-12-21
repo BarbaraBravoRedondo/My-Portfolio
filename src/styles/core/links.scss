@@ -1,18 +1,17 @@
 .link {
-    text-decoration: none;
-    color: $mediumcolor;
-  
-    &:hover {
-      color: $maincolor;
-      transition: 0.8s ease;
-    }
+  text-decoration: none;
+  color: $mediumcolor;
+
+  &:hover {
+    color: $maincolor;
+    transition: 0.8s ease;
   }
-  
-  .link2 {
-    text-decoration: none;
-  
-    &:hover {
-      transition: 0.8s ease;
-    }
+}
+
+.link2 {
+  text-decoration: none;
+
+  &:hover {
+    transition: 0.8s ease;
   }
-  
+}
