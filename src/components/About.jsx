@@ -73,10 +73,10 @@ function About() {
               Nov20 - Jan22
             </p>
             <h4 className="main_sectionExperience_list-element-job">
-              INKONITO - ZUMA GROUP (UK)
-            </h4>
+                  Manager
+            </h4>NITO
             <h5 className="main_sectionExperience_list-element-company">
-              Manager
+          INKO - ZUMA GROUP (UK)
             </h5>
             <p className="main_sectionExperience_list-element-description">
               I oversaw operations, focusing on monitoring inventory and
