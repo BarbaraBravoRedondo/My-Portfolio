@@ -12,7 +12,7 @@ function App() {
     <>
       <Routes>
         <Route
-          path="/"
+          path="/projects"
           element={
             <div className="wrapper wrapper__structure">
               <Header />
@@ -22,7 +22,7 @@ function App() {
           }
         />
         <Route
-          path="/about-me"
+          path="/"
           element={
             <div className="wrapper">
               <Header />

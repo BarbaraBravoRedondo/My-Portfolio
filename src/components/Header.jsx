@@ -12,12 +12,12 @@ function Header() {
       <nav>
         <ul className="header__nav">
           <li>
-            <Link className="link" to="/about-me" title="ir a sobre mí">
+            <Link className="link" to="/" title="ir a sobre mí">
               ABOUT
             </Link>
           </li>
           <li>
-            <Link className="link" to="/" title="ir a proyectos">
+            <Link className="link" to="/projects" title="ir a proyectos">
               PROJECTS
             </Link>
           </li>

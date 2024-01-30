@@ -5,7 +5,9 @@ import cv from '../downloads/cv.pdf'
 
 function About() {
   return (
-    <main className="about">
+    <main className="about">      <article className="project">
+        <img className="project__img" src={picture} alt="" />
+      </article>
       <article className="about__txt font-light">
         <p className="about__txt__parg">
          Hi there! I'm <b>Bárbara Bravo Redondo</b>.<p>I'm a <b>flexible</b>, <b>hardworking</b>, and <b>multidisciplinary</b> individual in my career journey. .</p>
@@ -23,9 +25,7 @@ function About() {
           exhilarating tech realm.
         </p>
       </article>
-      <article className="project">
-        <img className="project__img" src={picture} alt="" />
-      </article>
+
       <a href={cv} download="BarbaraBravoRedondo.pdf">
                     <button className="btn">Descargar CV</button>
                 </a>
