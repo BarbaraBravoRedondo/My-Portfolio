@@ -1,6 +1,7 @@
 import '../styles/About.scss';
 import '../styles/Experience.scss';
 import picture from '../images/me.jpg';
+import cv from '../downloads/cv.pdf'
 
 function About() {
   return (
@@ -25,6 +26,9 @@ function About() {
       <article className="project">
         <img className="project__img" src={picture} alt="" />
       </article>
+      <a href={cv} download="BarbaraBravoRedondo.pdf">
+                    <button className="btn">Descargar CV</button>
+                </a>
       <section className="main_sectionExperience" id="experience">
         <h3 className="main_sectionExperience_title">Experience</h3>
         <div className="main_sectionExperience_line"></div>

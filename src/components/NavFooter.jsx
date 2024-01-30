@@ -33,7 +33,7 @@ function NavFooter() {
           target="_blank"
           rel="noreferrer"
         >
-          <i className="fa-solid fa-envelope fa-xs footer__nav__iconos"></i>
+          <i className="fa-solid fa-envelope fa-xs footer__nav__iconos "></i>
         </a>
       </li>
     </ul>
