@@ -1,34 +1,44 @@
 import '../styles/About.scss';
 import '../styles/Experience.scss';
 import picture from '../images/me.jpg';
-import cv from '../downloads/cv.pdf'
+import cv from '../downloads/cv.pdf';
 
 function About() {
   return (
-    <main className="about">      <article className="project">
+    <main className="about">
+      {' '}
+      <article className="project">
         <img className="project__img" src={picture} alt="" />
       </article>
       <article className="about__txt font-light">
         <p className="about__txt__parg">
-         Hi there! I'm <b>Bárbara Bravo Redondo</b>.<p>I'm a <b>flexible</b>, <b>hardworking</b>, and <b>multidisciplinary</b> individual in my career journey. .</p>
+          Hi there! I'm <b>Bárbara Bravo Redondo</b>.
+          <p>
+            I'm a <b>flexible</b>, <b>hardworking</b>, and{' '}
+            <b>multidisciplinary</b> individual in my career journey. .
+          </p>
         </p>
         <p className="about__txt__parg">
-          I greatly value <b>visual languages</b>, paying attention to <b>pixel-perfect details</b>, and crafting <b>clean and organized code</b>. I embarked on a path in web
+          I greatly value <b>visual languages</b>, paying attention to{' '}
+          <b>pixel-perfect details</b>, and crafting{' '}
+          <b>clean and organized code</b>. I embarked on a path in web
           development through the <b>Adalab bootcamp</b>, gaining solid
-          proficiency in <b>front-end</b> technologies. Currently, I'm exploring <b>full-stack</b> technologies while continuing self-directed learning
+          proficiency in <b>front-end</b> technologies. Currently, I'm exploring{' '}
+          <b>full-stack</b> technologies while continuing self-directed learning
           to delve deeper into specific areas. I'm excited to contribute my
-          skills in an environment that offers new <b>challenges</b> and values <b>continuous growth</b>, where I can bring creativity and expertise
+          skills in an environment that offers new <b>challenges</b> and values{' '}
+          <b>continuous growth</b>, where I can bring creativity and expertise
           to drive innovative projects forward.
         </p>
         <p className="about__txt__parg">
-          My relentless pursuit of <b>learning</b> and insatiable <b>curiosity</b> propels me to keep discovering and growing in this
+          My relentless pursuit of <b>learning</b> and insatiable{' '}
+          <b>curiosity</b> propels me to keep discovering and growing in this
           exhilarating tech realm.
         </p>
       </article>
-
       <a href={cv} download="BarbaraBravoRedondo.pdf">
-                    <button className="btn">Descargar CV</button>
-                </a>
+        <button className="btn">Descargar CV</button>
+      </a>
       <section className="main_sectionExperience" id="experience">
         <h3 className="main_sectionExperience_title">Experience</h3>
         <div className="main_sectionExperience_line"></div>
@@ -76,11 +86,10 @@ function About() {
             <p className="main_sectionExperience_list-element-date">
               Nov20 - Jan22
             </p>
-            <h4 className="main_sectionExperience_list-element-job">
-                  Manager
-            </h4>NITO
+            <h4 className="main_sectionExperience_list-element-job">Manager</h4>
+           
             <h5 className="main_sectionExperience_list-element-company">
-          INKO - ZUMA GROUP (UK)
+              INKONITO-ZUMA GROUP (UK)
             </h5>
             <p className="main_sectionExperience_list-element-description">
               I oversaw operations, focusing on monitoring inventory and

@@ -12,16 +12,6 @@ function App() {
     <>
       <Routes>
         <Route
-          path="/projects"
-          element={
-            <div className="wrapper wrapper__structure">
-              <Header />
-              <ProjectList />
-              <Footer />
-            </div>
-          }
-        />
-        <Route
           path="/"
           element={
             <div className="wrapper">
@@ -31,6 +21,17 @@ function App() {
             </div>
           }
         />
+        <Route
+          path="/projects"
+          element={
+            <div className="wrapper wrapper__structure">
+              <Header />
+              <ProjectList />
+              <Footer />
+            </div>
+          }
+        />
+
         <Route
           path="/contact"
           element={
