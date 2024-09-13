@@ -7,13 +7,11 @@ function Footer() {
     <footer className="footer">
       <div className="footer__items"></div>
       <Link className="link footer__items" to="/" title="ir a home">
-        <h2 className="footer__title font-sm">Front-end Developer</h2>
+        <h2 className="footer__title font-sm">B B R</h2>
       </Link>
       <NavFooter />
     </footer>
   );
 }
-Footer.defaultProps = {};
 
-Footer.propTypes = {};
 export default Footer;

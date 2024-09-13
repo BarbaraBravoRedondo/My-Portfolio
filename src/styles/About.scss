@@ -9,33 +9,112 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  @include desktop {
-    padding: 3em;
-  }
 
+  &_world {
+    font-size: 1.6em;
+    color: $maincolor;
+    @include tablet {
+      padding-top: 1%;
+      font-size: 2em;
+    }
+    @include desktop {
+      font-size: 2em;
+      padding-bottom: 2%;
+    }
+  }
+  &_topContainer {
+    margin-top: 2%;
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      gap:4%;
+
+      align-content: stretch;
+
+      align-items:center;
+  
+    }
+  }
   &__txt {
+    flex-direction: row;
     text-align: center;
     margin-bottom: 3.5rem;
-    max-width: 70vw;
-    &__parg {
-      margin-top: 2rem;
+    max-width: 80vw;
+
+    color: rgb(243, 228, 228);
+
+    @include desktop {
+      max-width: 60vw;
+      font-weight: 700;
+      font-size: 0.9em;
+
+      text-align: justify;
     }
+  }
+  &__parg {
+    padding: 40px;
+    margin-top: 1rem;
+    text-align: center;
   }
 }
 
 .project {
+  height: 100%;
+  margin: 5% auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  &__img {
+
+
+
+
+  &__imgA {
     width: 10rem;
-    border-radius: 50%;
+    height: 100%;
     object-fit: cover;
-    box-shadow: 0 0 15px 5px rgba(238, 238, 193, 0.859);  
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.859);
+  
     @include tablet {
-    width: 50rem;
+      width: 18rem;
+    }
 
-  }
-  
-  }
+    @include desktop {
+   
 
-  
+      display: block;
+    }
+  }
 }
+a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  .btn {
+    margin:10%;
+    background-color: $maincolor;
+    border-radius: 50px;
+    border: 2px solid rgba(193, 245, 210, 0.855);
+    color: black;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: max-content;
+    white-space: nowrap; 
+    
+    i {
+      font-size: large;
+    }
+  
+    @include desktop {
+      font-weight: 700;
+      margin: 20%;
+   
+    
+    }
+  }
+}  
+

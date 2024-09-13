@@ -1,130 +1,82 @@
 import '../styles/About.scss';
 import '../styles/Experience.scss';
-import picture from '../images/me.jpg';
+
 import cv from '../downloads/cv.pdf';
+import experiences from '../data/Experience.json'; 
+
+const sortExperiences = (experiences) => {
+  return experiences.sort((a, b) => {
+  
+    const parseDate = (date) => {
+      const [startDate] = date.split(' - ');
+
+      const yearMonth = startDate.match(/\d{2}(\d{2})/);
+      return yearMonth ? parseInt(yearMonth[1], 10) + parseInt(yearMonth[0], 10) * 100 : 0;
+    };
+
+ 
+    return parseDate(b.date) - parseDate(a.date);
+  });
+};
 
 function About() {
+  const sortedExperiences = sortExperiences(experiences);
+
   return (
     <main className="about">
-      {' '}
-      <article className="project">
-        <img className="project__img" src={picture} alt="" />
-      </article>
-      <article className="about__txt font-light">
-        <p className="about__txt__parg">
-          Hi there! I'm <b>Bárbara Bravo Redondo</b>.
-          <p>
-            I'm a <b>flexible</b>, <b>hardworking</b>, and{' '}
-            <b>multidisciplinary</b> individual in my career journey. .
-          </p>
-        </p>
-        <p className="about__txt__parg">
-          I greatly value <b>visual languages</b>, paying attention to{' '}
-          <b>pixel-perfect details</b>, and crafting{' '}
-          <b>clean and organized code</b>. I embarked on a path in web
-          development through the <b>Adalab bootcamp</b>, gaining solid
-          proficiency in <b>front-end</b> technologies. Currently, I'm exploring{' '}
-          <b>full-stack</b> technologies while continuing self-directed learning
-          to delve deeper into specific areas. I'm excited to contribute my
-          skills in an environment that offers new <b>challenges</b> and values{' '}
-          <b>continuous growth</b>, where I can bring creativity and expertise
-          to drive innovative projects forward.
-        </p>
-        <p className="about__txt__parg">
-          My relentless pursuit of <b>learning</b> and insatiable{' '}
-          <b>curiosity</b> propels me to keep discovering and growing in this
-          exhilarating tech realm.
-        </p>
-      </article>
-      <a href={cv} download="BarbaraBravoRedondo.pdf">
-        <button className="btn">Descargar CV</button>
+      {/* <h2 className='about_world'>&lt; Hello World!/&gt;</h2>
+
+      <div className='about_topContainer'>
+        <div className="project">
+          <img className="project__imgA" src={picture} alt="" />
+        </div>
+        <article className="about__txt font-light">
+  <div className="about__txt__parg">
+    Hi, I'm <b>Bárbara Bravo Redondo</b>. I’m a <b>flexible</b> and <b>hardworking</b> professional with a passion for <b>visual languages</b> and <b>clean code</b>.
+  </div>
+  <p className="about__txt__parg">
+    I honed my skills through the <b>Adalab bootcamp</b> and am now exploring <b>full-stack</b> development. I thrive in environments that challenge me and promote <b>continuous growth</b>.
+  </p>
+  <p className="about__txt__parg">
+    My drive for <b>learning</b> and <b>curiosity</b> keeps me growing in the tech world.
+  </p>
+</article> */}
+
+      {/* </div> */}
+
+      <a href={cv} download="CV-Barbara-Bravo-Redondo.pdf">
+        <button className="btn">Download CV<i className="fa-solid fa-download fa-lg"></i></button>
       </a>
+
       <section className="main_sectionExperience" id="experience">
         <h3 className="main_sectionExperience_title">Experience</h3>
         <div className="main_sectionExperience_line"></div>
         <ul className="main_sectionExperience_list">
-          <li className="main_sectionExperience_list-element">
-            <div className="main_sectionExperience_list-element-dot"></div>
-            <p className="main_sectionExperience_list-element-date">
-              Feb23 - Aug23
-            </p>
-            <h4 className="main_sectionExperience_list-element-job">
-              Administrative
-            </h4>
-            <h5 className="main_sectionExperience_list-element-company">
-              QUIRONSALUD
-            </h5>
-            <p className="main_sectionExperience_list-element-description">
-              Within a healthcare setting, my role involved managing appointment
-              schedules, maintaining detailed patient records, and facilitating
-              communication with insurance providers. I ensured seamless
-              administrative operations, enabling efficient patient care and
-              smooth insurance-related processes within the healthcare facility.
-            </p>
-          </li>
-          <li className="main_sectionExperience_list-element">
-            <div className="main_sectionExperience_list-element-dot"></div>
-            <p className="main_sectionExperience_list-element-date">
-              Feb22 - Jan23
-            </p>
-            <h4 className="main_sectionExperience_list-element-job">
-              Aux Administrative
-            </h4>
-            <h5 className="main_sectionExperience_list-element-company">
-              FIDELIS (HM Puerta de Hierro)
-            </h5>
-            <p className="main_sectionExperience_list-element-description">
-              At a healthcare facility, I effectively managed record-keeping
-              processes, supervised inventory, and meticulously handled
-              documentation within the radiography department. My role was
-              crucial in maintaining organized and accurate records, ensuring
-              seamless operations and compliance with regulatory standards.
-            </p>
-          </li>
-          <li className="main_sectionExperience_list-element">
-            <div className="main_sectionExperience_list-element-dot"></div>
-            <p className="main_sectionExperience_list-element-date">
-              Nov20 - Jan22
-            </p>
-            <h4 className="main_sectionExperience_list-element-job">Manager</h4>
-           
-            <h5 className="main_sectionExperience_list-element-company">
-              INKONITO-ZUMA GROUP (UK)
-            </h5>
-            <p className="main_sectionExperience_list-element-description">
-              I oversaw operations, focusing on monitoring inventory and
-              optimizing budgets. Managing a team of 20, I streamlined staff
-              activities, enhancing efficiency and service quality. My role
-              extended to optimizing inventory and budgets, ensuring
-              cost-effectiveness while maintaining service excellence in the
-              hospitality sector.
-            </p>
-          </li>
-          <li className="main_sectionExperience_list-element">
-            <div className="main_sectionExperience_list-element-dot"></div>
-            <p className="main_sectionExperience_list-element-date">
-              Sep17 - Jul20
-            </p>
-            <h4 className="main_sectionExperience_list-element-job">
-              Assistant Mangerr
-            </h4>
-            <h5 className="main_sectionExperience_list-element-company">
-              BYRON S.L (UK)
-            </h5>
-            <p className="main_sectionExperience_list-element-description">
-              {' '}
-              Focused on cash-out activities, daily report generation, and stock
-              management, I supervised operational staff. Additionally, I took
-              charge of forecasting control to optimize resource utilization and
-              efficiency.
-            </p>
-          </li>
+          {sortedExperiences.map((exp, index) => (
+            <li className="main_sectionExperience_list-element" key={index}>
+              <div className="main_sectionExperience_list-element-dot"></div>
+              <p className="main_sectionExperience_list-element-date">
+                {exp.date}
+              </p>
+              <h4 className="main_sectionExperience_list-element-job">
+                {exp.job}
+              </h4>
+              <h5 className="main_sectionExperience_list-element-company">
+                {exp.company}
+              </h5>
+              <p className="main_sectionExperience_list-element-description">
+                {exp.description}
+              </p>
+            </li>
+          ))}
         </ul>
       </section>
     </main>
   );
 }
+
 About.defaultProps = {};
 
 About.propTypes = {};
+
 export default About;

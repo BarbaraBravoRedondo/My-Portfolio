@@ -1,23 +1,30 @@
 //imports depencencies,images,styles*//
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Header';
 import ProjectList from './ProjectsList';
 import Footer from './Footer';
 import About from './About';
 import Contact from './Contact';
 import '../styles/App.scss';
+import NotFound from './NotFound';
+import BarChart from './BarChart';
+
+
+import Home from './Home';
 
 function App() {
   return (
     <>
+      {' '}
+      <Header />
+      {/* <BarChart /> */}
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route
-          path="/"
+          path="/about"
           element={
             <div className="wrapper">
-              <Header />
               <About />
-              <Footer />
             </div>
           }
         />
@@ -25,9 +32,7 @@ function App() {
           path="/projects"
           element={
             <div className="wrapper wrapper__structure">
-              <Header />
               <ProjectList />
-              <Footer />
             </div>
           }
         />
@@ -36,13 +41,13 @@ function App() {
           path="/contact"
           element={
             <div className="wrapper wrapper__structure">
-              <Header />
               <Contact />
-              <Footer />
             </div>
           }
         />
-      </Routes>
+             <Route path="*" element={<NotFound />} /> 
+      </Routes>{' '}
+      <Footer />
     </>
   );
 }

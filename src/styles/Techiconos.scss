@@ -6,28 +6,36 @@
 @import 'core/fonts';
 
 .tech {
-  color: $color-yellow-light;
+
+  color: $color-green-light;
   display: flex;
   gap: 0.2rem;
   align-items: center;
+  i{color:black}
+  @include desktop {
+    color: rgb(86, 101, 86) !important;
+  }
+  
   &__img {
     height: 1.5em;
     object-fit: contain;
     &__mvl {
       display: contents;
       @include desktop {
-        display: none;
+      
+        
       }
     }
     &__dsk {
       display: none;
       @include desktop {
         display: contents;
+        color:black
       }
     }
   }
 
-  @include desktop {
-    color: white;
-  }
+}
+.iconic{
+  color:rgb(84, 79, 79) ;
 }

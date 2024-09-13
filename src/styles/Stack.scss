@@ -1,0 +1,63 @@
+@import 'core/reset';
+@import 'core/variables';
+@import 'core/mediaqueries';
+@import 'core/links';
+@import 'core/iconos';
+@import 'core/fonts';
+
+.knowledges {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.icon-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  height: max-content;
+  position: relative;
+  margin: 20px;
+}
+
+.icon-container {
+  position: relative;
+  width: 60px;
+  height: 70px; /* Ajusta según el tamaño deseado */
+  text-align: center;
+}
+
+.tech-name {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #f7f7f7;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.icon-container:hover .tech-name {
+  opacity: 1;
+}
+
+.icon-container img {
+  width: 100%;
+  height: auto; /* Mantiene la proporción de la imagen */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para la sombra y la transformación */
+  -webkit-filter: drop-shadow(1px 1px 0px rgb(49, 49, 48))
+                  drop-shadow(-1px -1px 0px rgb(3, 1, 1));
+
+
+  border-radius: 4px; /* Opcional: para bordes redondeados en la imagen */
+}
+
+.icon-container:hover img {
+  transform: scale(1.1);  filter:
+          drop-shadow(-1px -1px 6px rgb(95, 212, 95));
+//   filter:drop-shadow(-1px 1px 1px rgba(152, 255, 255, 0.6)); /* Sombra más pronunciada al pasar el ratón */
+// }
+}

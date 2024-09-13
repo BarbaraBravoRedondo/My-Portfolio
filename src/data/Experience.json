@@ -1,0 +1,39 @@
+[
+    {
+      "date": "Apr24 - Jun24",
+      "job": "Frontend Collaborator",
+      "company": "Adopta Un Junior",
+      "description": "Collaborated on the e-commerce project ‘Punto Dulce’, working directly with the end client. Utilized technologies including React for front-end development, Trello for project management, Figma for design, Notion for documentation, Docker for containerization, and NodeJs for server-side logic. Involved in creating and maintaining user interfaces, ensuring responsiveness and functionality across different devices, and integrating various third-party services."
+    },
+    {
+      "date": "2024",
+      "job": "Administration and Systems",
+      "company": "CNIO",
+      "description": "Managed security and administration of IT services at the CNIO (Centro Nacional de Investigaciones Oncológicas). Responsibilities included overseeing data and document registration processes, controlling access to secure systems, and ensuring the integrity and confidentiality of sensitive information. Acted as a liaison between different departments to facilitate smooth operation and enhance system efficiency."
+    },
+    {
+      "date": "Feb23 - Aug23",
+      "job": "Administrative",
+      "company": "QUIRONSALUD",
+      "description": "Within a healthcare setting, my role involved managing appointment schedules, maintaining detailed patient records, and facilitating communication with insurance providers. I ensured seamless administrative operations, enabling efficient patient care and smooth insurance-related processes within the healthcare facility."
+    },
+    {
+      "date": "Feb22 - Jan23",
+      "job": "Auxiliary Administrative",
+      "company": "FIDELIS (HM Puerta de Hierro)",
+      "description": "At a healthcare facility, I effectively managed record-keeping processes, supervised inventory, and meticulously handled documentation within the radiography department. My role was crucial in maintaining organized and accurate records, ensuring seamless operations and compliance with regulatory standards."
+    },
+    {
+      "date": "Nov20 - Jan22",
+      "job": "Manager",
+      "company": "INKONITO-ZUMA GROUP (UK)",
+      "description": "I oversaw operations, focusing on monitoring inventory and optimizing budgets. Managing a team of 20, I streamlined staff activities, enhancing efficiency and service quality. My role extended to optimizing inventory and budgets, ensuring cost-effectiveness while maintaining service excellence in the hospitality sector."
+    },
+    {
+      "date": "Sep17 - Jul20",
+      "job": "Assistant Manager",
+      "company": "BYRON S.L (UK)",
+      "description": "Focused on cash-out activities, daily report generation, and stock management, I supervised operational staff. Additionally, I took charge of forecasting control to optimize resource utilization and efficiency."
+    }
+  ]
+  

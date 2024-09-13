@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     gap: 0.35em;
+
     @include desktop {
       justify-content: flex-end;
     }
@@ -21,6 +22,10 @@
       transition: color 0.3s, transform 0.3s;
       background-color: $mediumcolor;
       border-radius: 100em;
+      @include desktop{
+        font-size: 1.4em;
+      }
+      @include tablet{}
       &:hover {
         background-color: $maincolor;
         transition: 0.8s ease;

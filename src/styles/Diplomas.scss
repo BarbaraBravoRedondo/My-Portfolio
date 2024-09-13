@@ -1,0 +1,152 @@
+@import 'core/variables';
+@import 'core/mediaqueries';
+@import 'core/fonts';
+
+.title{
+width: 100vw;
+background:$maincolor;
+color:black;
+font-weight: 600;
+text-align: center;
+border-top: $color-pistachio solid 4px;
+border-bottom: $color-pistachio solid 4px;
+box-shadow: white 3px;
+text-transform: uppercase;
+margin-top: 5%;
+
+}
+.swiper-container {
+  height: 100%;
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .PicSlide {
+      display: block;
+      width: 60%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .swiper-thumbs {
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    align-content: flex-start;
+    padding-top: 0;
+    margin-top: 0;
+
+    .swiper-slide {
+      opacity: 0.4;
+      cursor: pointer;
+
+      &-thumb-active {
+        opacity: 1;
+      }
+
+      .PicSlideD {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.swiper {
+  width: 90vw;
+  padding: 6%;
+  margin-bottom: 0 !important;
+  padding-bottom: 20px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: $maincolor;
+  width: 20px;
+  height: 20px;
+  top: calc(50%);
+
+  @include mobile {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-slide:hover {
+  transform: scale(1.1);
+}
+
+
+@include mobile {
+  .swiper-container {
+    margin: 10px 0;
+    
+    .swiper-slide {
+      .PicSlide {
+        width: 80%;
+      }
+    }
+    
+    .swiper-thumbs {
+      display: none;
+    }
+  }
+}
+
+@include tablet {
+  .swiper-container {
+    .swiper-slide {
+      .PicSlide {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .swiper-container {
+    .swiper-slide {
+      .PicSlide {
+        width: 60%;
+      }
+    }
+
+    .swiper-thumbs {
+      display: flex;
+      flex-direction: row;
+      padding-top: 10px;
+      margin-top: 10px;
+    }
+  }
+}
+
+@include LDesktop {
+  .swiper-container {
+    .swiper-slide {
+      .PicSlide {
+        width: 50%;
+      }
+    }
+  }
+}

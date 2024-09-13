@@ -10,28 +10,51 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  .name {
-    font-size: 1.7em;
-  }
+  gap: 1rem;
+  padding-top: 2%;
+
   @include desktop {
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
   }
-  &__logo {
-    width: 75vw;
-    min-width: 15.3rem;
-    max-width: 33rem;
-    @include desktop {
-      max-width: 15em;
-    }
-  }
+  .LOGO {
+  width: 50%;
+  border: rgb(90, 255, 57) 5px solid;
+
+}
+  
   &__nav {
     display: flex;
-    justify-content: space-between;
-    min-width: 15rem;
+    justify-content: space-around;
+   
     gap: 1rem;
-    @include desktop {
-      text-transform: uppercase;
-      gap: 6rem;
+
+    @include tablet {
+      gap: 3rem;
+   
+      padding-top: 3%;
     }
+    @include desktop {
+      align-items: flex-start;
+      justify-content: space-evenly;
+      text-transform: uppercase;
+      gap: 3rem;
+      width: 80vw;
+      padding-top: 0;
+      align-content: flex-start;
+    }
+  }
+}
+
+
+.linkNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include desktop {
+    width: 30vw;
   }
 }

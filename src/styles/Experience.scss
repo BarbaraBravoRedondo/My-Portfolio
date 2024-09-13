@@ -1,102 +1,142 @@
-@import "core/variables";
-@import "core/mediaqueries";
-
+@import 'core/variables';
+@import 'core/mediaqueries';
 
 .main_sectionExperience {
-    background-image: url("./../images/experience.png");
-    background-size: cover;
-    background-position: center center;
-    color: $color-grey-dark;
-    background-color: $darkcolor;
-    scroll-margin-top: 50px;
-    padding-bottom: 30px;
-    color:$mediumcolor;
-  
-    &_title {
-      text-align: center;
-      font-weight: 900;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      font-size: 20px;
-      color: $color-grey-light;
-      padding: 15px;
-      span {
-        color: $color-grey-dark;
-      }
-      @include tablet {
-        font-size: 36px;
-        padding: 30px;
-      }
-    }
+  color: $color-grey-dark;
+  background-color: $darkcolor;
+  scroll-margin-top: 50px;
+  padding-bottom: 30px;
+  color: $mediumcolor;
+  @include desktop {
+    width: 80vw;
+  }
 
-    &_list {
-      padding: 0px 25px;
-      max-width: 1400px;
-      margin: auto;
-      &-element {
-        &-dot {
-          @include tablet {
-            width: 15px;
-            height: 15px;
-            background-color: $color-yellow-light;
-            border-radius: 7.5px;
-            position: absolute;
-            left: 49%;
-          }
+  &_title {
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: $color-grey-light;
+    padding: 15px;
+
+    span {
+      color: $color-grey-dark;
+    }
+    @include tablet {
+      font-size: 36px;
+      padding: 30px;
+    }
+    @include desktop {
+      font-size: 1.8em;
+    }
+  }
+
+  &_list {
+    padding: 0px 20px;
+    width: fit-content;
+    width: 100%;
+    @include tablet {
+      text-align: left;
+      font-size: 1.5em;
+      width: 100%;
+      margin: 3% 0;
+    }
+    &-element {
+      line-height: 1.7;
+     
+      @include tablet {
+        border-left: solid 2px $color-green-light;
+        padding-left: 3.2%;
+        position: relative;
+        padding-bottom: 5%;
+        
+        margin-left: 2%;
+      }
+
+      &-dot {
+        @include tablet {
+          width: 15px;
+          height: 15px;
+          background-color: $color-green-light;
+          border: 2px solid #cdf76a;
+          border-radius: 7.5px;
+          position: absolute;
+          left: -8px;
+          top: 0%;
+          transform: translateY(-50%);
+        }
+      }
+      &:nth-child {
+        text-align: left;
+      }
+
+      &:nth-child(odd) {
+        text-align: left;
+      }
+
+      &-date {
+        color: $color-green-light;
+        font-weight:600;
+        font-size: 0.8em;
+        text-transform: uppercase;
+ 
+        @include tablet {
+          font-size: 0.7em;
+          position: absolute;
+          top: 0%;
+          transform: translateY(-50%);
+        }
+        @include desktop {
+        }
+      }
+      &-job {@include mobile{
+        padding-bottom: 3px;
        
-          
-          @include desktop {
-      left: 49.2%;
-          }
-          @include LDesktop{
-                  left: 49.6%;
-          }
+        background-color: rgb(228, 255, 173);
+        color:$darkcolor;
+        padding: 2%;
+       line-height: 1;
+       font-weight: 400;
+       margin:1% 0;}
+        @include tablet {
+          padding:0;
+          color:white;
+          background-color: none;
+          padding-top: 4%;
+       
+           color: $color-pistachio;
+      
         }
-        &:nth-child(even) {
-          text-align: left;
-          @include tablet {
-            margin-left: 49.78%;
-            padding-left: 30px;
-            padding-right: 100px;
-            border-left: solid 2px $color-yellow-light;
-          }
-          @include desktop {
-            margin-left: 49.82%;
-          }
+        @include desktop {
+    
         }
-        &:nth-child(odd) {
-          text-align: right;
-          @include tablet {
-            margin-right: 50%;
-            padding-right: 30px;
-            padding-left: 100px;
-            border-right: solid 2px $color-yellow-light;
-            &.last {
-              border-right: solid 0px;
-            }
-          }
+      }
+      &-company {
+        padding-bottom: 5px;
+        font-weight:bold;
+
+        @include tablet {
+          font-size: 1.2rem;
         }
-        &-date {
-          color: $color-yellow-light;
-          font-weight: bold;
-          font-size: 14px;
-          padding-bottom: 5px;
-          text-transform: uppercase;
+        @include desktop {
         }
-        &-job {
-          padding-bottom: 5px;
+      }
+      &-description {
+        font-size: 16px;
+        font-weight: lighter;
+        padding-bottom: 20px;
+        text-align: justify;
+        color: $lightcolor; 
+         line-height: 1.8;
+        @include tablet {
+          font-size: 0.5em;
+          text-align: initial;
+          width: 100%;
         }
-        &-company {
-          padding-bottom: 5px;
-          font-weight: inherit;
-        }
-        &-description {
-          font-size: 16px;
-          font-weight: lighter;
-          padding-bottom: 20px;
-          text-align: justify;
-          color:$lightcolor
+        @include desktop {
         }
       }
     }
   }
+}

@@ -1,0 +1,27 @@
+@import 'core/reset';
+@import 'core/variables';
+@import 'core/mediaqueries';
+@import 'core/links';
+@import 'core/iconos';
+@import 'core/fonts';
+
+.knowledges{
+    display: flex;
+    flex-direction: column;
+}
+.home-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+.about_world {
+    font-size: 1.6em;
+    color: $maincolor;
+    @include tablet {
+      padding-top: 1%;
+      font-size: 2em;
+    }
+    @include desktop {
+      font-size: 2em;
+      padding-bottom: 2%;
+    }
+  }}

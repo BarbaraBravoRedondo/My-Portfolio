@@ -39,7 +39,7 @@ function NavFooter() {
     </ul>
   );
 }
-NavFooter.defaultProps = {};
 
-NavFooter.propTypes = {};
+
+
 export default NavFooter;

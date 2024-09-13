@@ -1,18 +1,20 @@
 import { Link } from 'react-router-dom';
+import LOGO from'../images/Beige Classy Modern Initials Name Logo (4).png'
+
 
 import '../styles/Header.scss';
 
 function Header() {
   return (
     <header className="header">
-      <Link className="link" to="/" title="ir a home">
-        <p className="name">Bárbara BR</p>
+      <Link className="linkNav" to="/" title="ir a home">
+        <img  src={LOGO}alt="" className='LOGO'/>
       </Link>
 
       <nav>
         <ul className="header__nav">
           <li>
-            <Link className="link" to="/" title="ir a sobre mí">
+            <Link className="link" to="/about" title="ir a sobre mí">
               ABOUT
             </Link>
           </li>
@@ -31,7 +33,5 @@ function Header() {
     </header>
   );
 }
-Header.defaultProps = {};
 
-Header.propTypes = {};
 export default Header;

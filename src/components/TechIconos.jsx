@@ -32,7 +32,7 @@ function TechIconos(props) {
 
   const getIconApi = (tecnologies) => {
     if (tecnologies.toLowerCase().includes('api')) {
-      return <i className="fa-solid fa-xl fa-cloud"></i>;
+      return <i className="fa-solid fa-xl fa-cloud iconic"></i>;
     }
   };
   const getIconSql = (tecnologies) => {
