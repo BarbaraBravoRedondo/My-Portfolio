@@ -25,7 +25,7 @@
 .icon-container {
   position: relative;
   width: 60px;
-  height: 70px; /* Ajusta según el tamaño deseado */
+  height: 70px; 
   text-align: center;
 }
 
@@ -46,18 +46,18 @@
 
 .icon-container img {
   width: 100%;
-  height: auto; /* Mantiene la proporción de la imagen */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para la sombra y la transformación */
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
   -webkit-filter: drop-shadow(1px 1px 0px rgb(49, 49, 48))
                   drop-shadow(-1px -1px 0px rgb(3, 1, 1));
 
 
-  border-radius: 4px; /* Opcional: para bordes redondeados en la imagen */
+  border-radius: 4px; 
 }
 
 .icon-container:hover img {
   transform: scale(1.1);  filter:
           drop-shadow(-1px -1px 6px rgb(95, 212, 95));
-//   filter:drop-shadow(-1px 1px 1px rgba(152, 255, 255, 0.6)); /* Sombra más pronunciada al pasar el ratón */
-// }
+
+
 }

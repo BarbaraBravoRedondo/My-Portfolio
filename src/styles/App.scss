@@ -1,16 +1,49 @@
-//styles to each component
 @import 'core/reset';
 @import 'core/variables';
 @import 'core/mediaqueries';
 @import 'core/links';
 @import 'core/iconos';
 @import 'core/fonts';
-*{
-  box-sizing: content-box;
+
+
+
+* {
+  box-sizing: content-box; 
   padding: 0;
   margin: 0;
 }
+
+:root {
+  --background-color: #000; 
+  --text-color: #fff;
+  --link-color: #ccc; 
+  --link-hover-color: #aaa; 
+  --overlay-background-color: #f0f0f0;
+  --aquamarine: aquamarine;
+}
+
+[data-theme="light"] {
+  --background-color: #f4f2d9; 
+  --text-color: #090000;
+  --link-color: #000; 
+  --link-hover-color: #00bea1; 
+  --aquamarine: #108390;
+  --overlay-background-color: #0a0303;
+}
+
 body {
-  background-color: $darkcolor;
-  color: $mediumcolor;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  
+  &:hover,
+  &:focus {
+    color: var(--link-hover-color);
+  }
 }

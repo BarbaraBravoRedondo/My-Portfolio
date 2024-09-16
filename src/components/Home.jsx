@@ -15,13 +15,13 @@ const Home = () => {
         </div>
         <article className="about__txt font-light">
           <div className="about__txt__parg">
-            Hi, I'm <b>Bárbara Bravo Redondo</b>. I’m a <b>flexible</b> and <b>hardworking</b> professional with a passion for <b>visual languages</b> and <b>clean code</b>.
+            Hi, I'm Bárbara Bravo Redondo. I’m a flexible and hardworking professional with a passion for visual languages and clean code.
           </div>
           <p className="about__txt__parg">
-            I honed my skills through the <b>Adalab bootcamp</b> and am now exploring <b>full-stack</b> development. I thrive in environments that challenge me and promote <b>continuous growth</b>.
+            I honed my skills through the Adalab bootcamp and am now exploring full-stack development. I thrive in environments that challenge me and promote continuous growth.
           </p>
           <p className="about__txt__parg">
-            My drive for <b>learning</b> and <b>curiosity</b> keeps me growing in the tech world.
+            My drive for learning and curiosity keeps me growing in the tech world.
           </p>
         </article>
       </div>

@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import LOGO from'../images/Beige Classy Modern Initials Name Logo (4).png'
+import  ThemeToggle from './ThemeToggle';
+import '../styles/App.scss'
 
 
 import '../styles/Header.scss';
@@ -30,6 +32,7 @@ function Header() {
           </li>
         </ul>
       </nav>
+      <div> <ThemeToggle /></div>
     </header>
   );
 }

@@ -1,17 +1,19 @@
 .link {
   text-decoration: none;
-  color: $mediumcolor;
+  color: var(--link-color); /* Usa la variable de color del enlace */
 
   &:hover {
-    color: $maincolor;
-    transition: 0.8s ease;
+    color: var(--link-hover-color); /* Usa la variable de color del hover */
+    transition: color 0.3s ease; /* Ajusta el tiempo de transición si es necesario */
   }
 }
 
 .link2 {
   text-decoration: none;
+  color: var(--link-color); /* Usa la variable de color del enlace */
 
   &:hover {
-    transition: 0.8s ease;
+    color: var(--link-hover-color); /* Usa la variable de color del hover */
+    transition: color 0.8s ease; /* Ajusta el tiempo de transición */
   }
 }

@@ -11,6 +11,7 @@
   display: flex;
   gap: 0.2rem;
   align-items: center;
+
   i{color:black}
   @include desktop {
     color: rgb(86, 101, 86) !important;

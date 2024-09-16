@@ -1,12 +1,16 @@
+@import 'core/reset';
 @import 'core/variables';
 @import 'core/mediaqueries';
+@import 'core/links';
+@import 'core/iconos';
+@import 'core/fonts';
 
 .main_sectionExperience {
-  color: $color-grey-dark;
-  background-color: $darkcolor;
+  color: var(--text-color); 
+  background-color: var(--background-color); 
   scroll-margin-top: 50px;
   padding-bottom: 30px;
-  color: $mediumcolor;
+
   @include desktop {
     width: 80vw;
   }
@@ -17,11 +21,11 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     font-size: 20px;
-    color: $color-grey-light;
+    color: var(--text-color); 
     padding: 15px;
 
     span {
-      color: $color-grey-dark;
+      color: var(--text-color); 
     }
     @include tablet {
       font-size: 36px;
@@ -46,11 +50,10 @@
       line-height: 1.7;
      
       @include tablet {
-        border-left: solid 2px $color-green-light;
+        border-left: solid 2px $maincolor; 
         padding-left: 3.2%;
         position: relative;
         padding-bottom: 5%;
-        
         margin-left: 2%;
       }
 
@@ -58,7 +61,7 @@
         @include tablet {
           width: 15px;
           height: 15px;
-          background-color: $color-green-light;
+          background-color: $maincolor; 
           border: 2px solid #cdf76a;
           border-radius: 7.5px;
           position: absolute;
@@ -76,7 +79,7 @@
       }
 
       &-date {
-        color: $color-green-light;
+        color: var(--link-hover-color); 
         font-weight:600;
         font-size: 0.8em;
         text-transform: uppercase;
@@ -90,31 +93,31 @@
         @include desktop {
         }
       }
-      &-job {@include mobile{
-        padding-bottom: 3px;
-       
-        background-color: rgb(228, 255, 173);
-        color:$darkcolor;
-        padding: 2%;
-       line-height: 1;
-       font-weight: 400;
-       margin:1% 0;}
+      &-job {
+        @include mobile {
+          padding-bottom: 3px;
+          background-color: rgb(249, 249, 249);
+          color: rgb(39, 38, 38); 
+          padding: 2%;
+          line-height: 1;
+          font-weight: 400;
+          margin:1% 0;
+        }
         @include tablet {
           padding:0;
-          color:white;
+  
           background-color: none;
           padding-top: 4%;
-       
-           color: $color-pistachio;
-      
+    
         }
         @include desktop {
-    
         }
       }
       &-company {
         padding-bottom: 5px;
-        font-weight:bold;
+      color:var(--aquamarine);
+
+      
 
         @include tablet {
           font-size: 1.2rem;
@@ -127,8 +130,8 @@
         font-weight: lighter;
         padding-bottom: 20px;
         text-align: justify;
-        color: $lightcolor; 
-         line-height: 1.8;
+        color: var(--text-color); 
+        line-height: 1.8;
         @include tablet {
           font-size: 0.5em;
           text-align: initial;

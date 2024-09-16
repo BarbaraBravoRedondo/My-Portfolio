@@ -5,11 +5,9 @@ import NavFooter from './NavFooter';
 function Footer() {
   return (
     <footer className="footer">
-      <div className="footer__items"></div>
-      <Link className="link footer__items" to="/" title="ir a home">
-        <h2 className="footer__title font-sm">B B R</h2>
-      </Link>
-      <NavFooter />
+   <NavFooter />
+
+    
     </footer>
   );
 }

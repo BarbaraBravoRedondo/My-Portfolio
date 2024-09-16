@@ -41,7 +41,7 @@ function Stack() {
 
   return (
     <div className='knowledges'>
-      <h2 className="title">Technologies:</h2>
+      <h2 className="title">STACK:</h2>
       <div className="icon-box">
         {techStack.map((tech, index) => (
           <div className="icon-container" key={index}>

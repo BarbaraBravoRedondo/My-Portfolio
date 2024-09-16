@@ -7,7 +7,7 @@ import About from './About';
 import Contact from './Contact';
 import '../styles/App.scss';
 import NotFound from './NotFound';
-import BarChart from './BarChart';
+
 
 
 import Home from './Home';
@@ -15,9 +15,9 @@ import Home from './Home';
 function App() {
   return (
     <>
-      {' '}
+     
       <Header />
-      {/* <BarChart /> */}
+      <main>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route
@@ -31,23 +31,24 @@ function App() {
         <Route
           path="/projects"
           element={
-            <div className="wrapper wrapper__structure">
+           
               <ProjectList />
-            </div>
+       
           }
         />
 
         <Route
           path="/contact"
           element={
-            <div className="wrapper wrapper__structure">
+         
               <Contact />
-            </div>
+          
           }
         />
              <Route path="*" element={<NotFound />} /> 
       </Routes>{' '}
-      <Footer />
+      </main>
+   <Footer />
     </>
   );
 }

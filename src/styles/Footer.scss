@@ -4,26 +4,24 @@
 @import 'core/links';
 @import 'core/iconos';
 @import 'core/fonts';
+@import './App.scss';
 .footer {
   display: flex;
   flex-direction: column;
   padding-bottom: 2rem;
-  margin-top: auto; // Esto asegura que el footer se coloque al final del contenedor principal
+  margin-top: 3%; 
+  width: 100%;
 
-  @include desktop {
-    flex-direction: row;
-    margin-right: 3rem;
-  }
 
-  &__items {
-    width: 100%;
-    display: flex; // Asegura que los items del footer estén centrados
-    justify-content: center;
-    align-items: center; // Asegura que los elementos estén alineados verticalmente
-  }
+  // &__items {
+  //   width: 100%;
+  //   display: flex; // Asegura que los items del footer estén centrados
+  //   justify-content: center;
+  //   align-items: center; // Asegura que los elementos estén alineados verticalmente
+  // }
 
-  &__title {
-    text-align: center;
-    margin-bottom: 1%;
+  // &__title {
+  //   text-align: center;
+  //   margin-bottom: 1%;
   }
-}
+// }

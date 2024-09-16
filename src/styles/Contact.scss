@@ -5,6 +5,8 @@
 @import "core/iconos";
 @import "core/fonts";
 .contact {
+ 
+
   &__txt {
     text-align: center;
     &__parg {
@@ -12,14 +14,26 @@
     }
   }
 }
-/* Contact.scss */
+
 .contact__form {
-  max-width: 400px;
-  margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto; 
+  padding : 0px  7%;
+
+
+  @include tablet {
+    max-width: 60%; 
+    padding: 0 6%; 
+  }
+
+  @include desktop {
+    max-width: 40%; 
+    padding:2% 7%; 
+  }
 }
 
 .form-group {  
-  margin-bottom: 20px;
+  margin-bottom: 20px;  font-weight: 600;
 }
 
 label {
@@ -49,6 +63,6 @@ button {
 }
 
 button:hover {
-  background-color:rgb(219, 187, 7); 
+  background-color: $color-pistachio; 
   color: rgb(33, 29, 29); 
 }

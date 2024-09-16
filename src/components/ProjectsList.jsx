@@ -1,10 +1,9 @@
-// src/ProjectList.js
+
 import React from 'react';
-import projectsData from '../data/Projects'; // Asegúrate de que la ruta es correcta
+import projectsData from '../data/Projects'; git 
 import TechIconos from './TechIconos';
 import '../styles/ProjectList.scss';
 
-// Importa las imágenes
 import gnomes from '../images/gnomes.png';
 import cards from '../images/cards.png';
 import series from '../images/series.png';
@@ -37,12 +36,14 @@ function ProjectList() {
             <div className="project__overlay">
               <h2>{project.title}</h2>
               <TechIconos tecnologies={project.tecnologies} />
+              <div className='project__overlay__repo'>
               <a href={project.github} target="_blank" rel="noreferrer">
-                GitHub
+              <i className="fab fa-github"></i>
               </a>
               <a href={project.page} target="_blank" rel="noopener noreferrer">
-                WEB
-              </a>
+              <i className="fas fa-globe"></i>
+
+              </a></div>
             </div>
           </div>
         );

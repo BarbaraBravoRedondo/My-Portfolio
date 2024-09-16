@@ -6,30 +6,32 @@
 @import 'core/fonts';
 
 .footer {
-  height: fit-content;
+
+  
   &__nav {
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 0.35em;
-
-    @include desktop {
-      justify-content: flex-end;
-    }
-    &__iconos {
-      color: $darkcolor;
+    
+    &__iconos::before {
+      color: $maincolor;
       padding: 0.3em;
+      font-size: 1.8em;
+    
       transition: color 0.3s, transform 0.3s;
-      background-color: $mediumcolor;
+      background-color: rgb(255, 255, 255); 
       border-radius: 100em;
-      @include desktop{
+
+      @include desktop {
         font-size: 1.4em;
       }
-      @include tablet{}
+
       &:hover {
         background-color: $maincolor;
+        color: var(--background-color);
         transition: 0.8s ease;
-        transform: rotate(360deg)
+        transform: rotate(360deg);
       }
     }
   }

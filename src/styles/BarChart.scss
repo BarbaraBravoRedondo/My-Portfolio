@@ -4,25 +4,26 @@
 @import 'core/links';
 @import 'core/iconos';
 @import 'core/fonts';
+@import './App.scss';
 .doughnut-chart-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-items: stretch; /* Asegura que los elementos ocupen el mismo alto */
-    gap: 30px; /* Reduce el espacio entre el gráfico y la leyenda */
+    align-items: stretch;
+    gap: 30px; 
   }
   
   .doughnut-chart-container {
     
-    max-width: 180px; /* Ajusta el ancho máximo del gráfico si es necesario */
+    max-width: 180px; 
   }
   
   .doughnut-chart-info {
-    flex: 1; /* Permite que la información ocupe el espacio restante */
+    flex: 1; 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center; /* Centra verticalmente la información */
+    justify-content: center; 
   }
   
   .info-item {
@@ -37,7 +38,7 @@ font-size: smaller;}
   .color-box {
     width: 10px;
     height: 10px;
-    margin-right: 8px; /* Ajusta el espacio entre el color y el texto */
-    border-radius: 4px; /* Opcional, para bordes redondeados */
+    margin-right: 8px; 
+    border-radius: 4px; 
   }
   
