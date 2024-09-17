@@ -13,26 +13,23 @@
     display: flex;
     justify-content: center;
     gap: 0.35em;
-    
+    height: max-content;
+   
     &__iconos::before {
       color: $maincolor;
       padding: 0.3em;
-      font-size: 1.8em;
+      font-size: 2em;
+      margin: 10%;
     
       transition: color 0.3s, transform 0.3s;
       background-color: rgb(255, 255, 255); 
-      border-radius: 100em;
+      border-radius: 50%;
 
       @include desktop {
         font-size: 1.4em;
-      }
+      }    
 
-      &:hover {
-        background-color: $maincolor;
-        color: var(--background-color);
-        transition: 0.8s ease;
-        transform: rotate(360deg);
-      }
-    }
+
+    }  
   }
 }

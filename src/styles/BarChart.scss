@@ -5,40 +5,41 @@
 @import 'core/iconos';
 @import 'core/fonts';
 @import './App.scss';
+
 .doughnut-chart-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-items: stretch;
-    gap: 30px; 
-  }
-  
-  .doughnut-chart-container {
-    
-    max-width: 180px; 
-  }
-  
-  .doughnut-chart-info {
-    flex: 1; 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center; 
-  }
-  
-  .info-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2px;;
-    
-   
-    height: 20px;
-font-size: smaller;}
-  
-  .color-box {
-    width: 10px;
-    height: 10px;
-    margin-right: 8px; 
-    border-radius: 4px; 
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.doughnut-chart-container {
+  max-width: 180px;
+  margin-bottom: 20px;
+}
+
+.doughnut-chart-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+
+  height: 22px;
+  font-size: smaller;
+}
+
+.color-box {
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+  border-radius: 4px;
+}

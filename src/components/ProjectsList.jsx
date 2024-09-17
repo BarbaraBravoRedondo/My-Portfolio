@@ -1,6 +1,6 @@
 
 import React from 'react';
-import projectsData from '../data/Projects'; git 
+import projectsData from '../data/Projects'; 
 import TechIconos from './TechIconos';
 import '../styles/ProjectList.scss';
 

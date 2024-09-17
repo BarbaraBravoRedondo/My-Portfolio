@@ -62,7 +62,7 @@ const DoughnutChart = () => {
       </div>
       <div className="doughnut-chart-info">
         {data.labels.map((label, index) => (
-          <div key={index} className="info-item">
+          <div key={index} className="info-item" title={label}>
             <div
               className="color-box"
               style={{ backgroundColor: data.datasets[0].backgroundColor[index] }}

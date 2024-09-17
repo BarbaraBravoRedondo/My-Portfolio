@@ -34,9 +34,11 @@ margin-top: 5%;
 
     .PicSlide {
       display: block;
-      width: 60%;
-      height: 100%;
+      width: fit-content;
+      height: fit-content;
       object-fit: cover;
+      box-shadow: rgba(131, 142, 140, 0.5)  0 0 7px 7px;
+      
     }
   }
 

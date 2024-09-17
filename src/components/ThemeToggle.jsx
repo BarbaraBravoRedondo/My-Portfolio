@@ -1,11 +1,11 @@
 
-import '../styles/ThemeToggle.scss' // Asegúrate de que esto esté importado en tu proyecto
+import '../styles/ThemeToggle.scss' 
 
 import React, { useState, useEffect } from 'react';
-import '@fortawesome/fontawesome-free/css/all.min.css'; // Asegúrate de que esto esté importado en tu proyecto
+import '@fortawesome/fontawesome-free/css/all.min.css'; 
 
 const ThemeToggle = () => {
-  const [theme, setTheme] = useState('dark'); // Comienza con Dark Mode
+  const [theme, setTheme] = useState('dark');
 
   const toggleTheme = () => {
     const newTheme = theme === 'dark' ? 'light' : 'dark';

@@ -29,7 +29,7 @@ function NavFooter() {
         <a
           className="link"
           href="mailto:barbarabravoredondo@gmail.com@gmail.com"
-          title="Send a email"
+          title="Send an email"
           target="_blank"
           rel="noreferrer"
         >

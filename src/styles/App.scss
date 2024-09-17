@@ -20,15 +20,17 @@
   --link-hover-color: #aaa; 
   --overlay-background-color: #f0f0f0;
   --aquamarine: aquamarine;
+  --shadow-pic:#{$lightcolor} ;
 }
 
 [data-theme="light"] {
-  --background-color: #f4f2d9; 
+  --background-color: #fff9c6; 
   --text-color: #090000;
   --link-color: #000; 
   --link-hover-color: #00bea1; 
   --aquamarine: #108390;
   --overlay-background-color: #0a0303;
+  --shadow-pic: #{$maincolor};
 }
 
 body {

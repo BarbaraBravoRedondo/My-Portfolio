@@ -57,8 +57,6 @@ function About() {
   );
 }
 
-About.defaultProps = {};
 
-About.propTypes = {};
 
 export default About;

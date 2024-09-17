@@ -12,14 +12,15 @@
   align-items: center;
 
   &_world {
-    font-size: 1.6em;
+   
+    font-size: 1em;
     color: $maincolor;
     @include tablet {
       padding-top: 1%;
       font-size: 2em;
     }
     @include desktop {
-      font-size: 2em;
+   
       padding-bottom: 2%;
     }
   }
@@ -30,16 +31,14 @@
       flex-direction: row;
       justify-content: space-evenly;
       gap:4%; font-weight: 700;
-
       align-content: stretch;
-
       align-items:center;
   
     }
   }
   &__txt {
     flex-direction: row;
-    text-align: center;
+    text-align:center;
     margin-bottom: 3.5rem;
     max-width: 80vw; font-weight: 700;
   
@@ -76,7 +75,7 @@
     width: 10rem;
     height: 100%;
     object-fit: cover;
-    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.859);
+    box-shadow: 0 0 15px 5px  var(--shadow-pic);;
   
     @include tablet {
       width: 18rem;
