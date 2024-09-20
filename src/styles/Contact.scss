@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
  width: 90%;
+ align-items: center;
 
   &__txt {
     text-align: center;
@@ -20,7 +21,7 @@
 .contact__form {
   max-width: 800px;
   margin: 1% auto 18%; 
-  padding : 0px  7%;
+  padding : 0px  10% 0px 15%;
 
 
 
@@ -31,11 +32,11 @@
   }
 
   @include desktop {
-    max-width: 40%; 
-    padding:2% 7%; 
+    max-width: 60%; 
+    padding:0% 10% 2% 12%; 
     margin: 0 auto 5%; 
   }
-}
+} 
 
 .form-group {  
   margin-bottom: 20px;  font-weight: 600;
@@ -49,7 +50,7 @@ label {
 
 input[type="email"],
 textarea {
-  width: 80%;
+  width: 90%;
 background-color: rgb(184, 245, 231 , 0.8);
   padding: 8px;
   font-size: 20px;

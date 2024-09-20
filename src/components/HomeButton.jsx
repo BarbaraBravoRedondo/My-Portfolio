@@ -11,8 +11,8 @@ const HomeButton = () => {
   if (!showButton) return null;
 
   return (
-    <Link to="/" className="home-button">
-      <i className="fas fa-home"></i>
+    <Link to="/" className="home-button"title='Go to Home page'>
+      <i  className="fas fa-home"></i>
     </Link>
   );
 };

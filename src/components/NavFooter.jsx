@@ -1,4 +1,4 @@
-import '../styles/NavFooter.scss';
+import '../styles/Footer.scss';
 
 function NavFooter() {
   return (

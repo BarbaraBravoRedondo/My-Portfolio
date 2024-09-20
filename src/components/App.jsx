@@ -5,7 +5,7 @@ import Footer from './Footer';
 import About from './About';
 import Contact from './Contact';
 import Home from './Home';
-import HomeButton from './HomeButton'; // Importa el componente
+import HomeButton from './HomeButton'; 
 import '../styles/App.scss';
 import NotFound from './NotFound';
 
@@ -14,7 +14,7 @@ function App() {
     <>
       <Header />
       <main>
-        <HomeButton /> {/* Añade el botón de inicio aquí */}
+        <HomeButton /> 
         <Routes>
           <Route path="/" element={<Home />} />
           <Route

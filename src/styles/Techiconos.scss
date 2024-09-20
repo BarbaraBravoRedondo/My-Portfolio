@@ -6,37 +6,21 @@
 @import 'core/fonts';
 
 .tech {
-
-  color: $color-green-light;
+  
   display: flex;
   gap: 0.2rem;
   align-items: center;
 
-  i{color:black}
-  @include desktop {
-    color: rgb(86, 101, 86) !important;
-  }
-  
-  &__img {
-    height: 1.5em;
-    object-fit: contain;
-    &__mvl {
-      display: contents;
-      @include desktop {
-      
-        
-      }
-    }
-    &__dsk {
+  i {
+   
+    @include desktop {
       display: none;
-      @include desktop {
-        display: contents;
-        color:black
-      }
     }
   }
 
-}
-.iconic{
-  color:rgb(84, 79, 79) ;
+  &__img {
+    height: 1.5em;
+    object-fit: contain;
+
+  }
 }

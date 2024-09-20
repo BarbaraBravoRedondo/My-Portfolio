@@ -1,19 +1,26 @@
+@import './variables';
+
+
 .link {
   text-decoration: none;
-  color: var(--link-color); /* Usa la variable de color del enlace */
+  color: var(--link-color);
 
   &:hover {
-    color: var(--link-hover-color); /* Usa la variable de color del hover */
-    transition: color 0.3s ease; /* Ajusta el tiempo de transición si es necesario */
+    color: $maincolor;
+    transition: color 0.3s ease;
+
+    @include desktop {
+      border-bottom: 2px var(--link-hover-color) solid;
+    }
   }
 }
 
 .link2 {
   text-decoration: none;
-  color: var(--link-color); /* Usa la variable de color del enlace */
+  color: var(--link-color);
 
   &:hover {
-    color: var(--link-hover-color); /* Usa la variable de color del hover */
-    transition: color 0.8s ease; /* Ajusta el tiempo de transición */
+    color: var(--link-hover-color);
+    transition: color 0.8s ease;
   }
 }

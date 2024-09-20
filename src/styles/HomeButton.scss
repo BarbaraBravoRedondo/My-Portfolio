@@ -2,31 +2,33 @@
 @import './App.scss';
 
 .home-button {
-  position: absolute;
+  position:fixed;
   top: 1rem;
-  left: 1rem; // Posiciona en la esquina superior izquierda en mobile
+  left: 1rem;
   font-size: 1.2rem;
-  color: var(--background-color);
+  color: var(--HomeButton);
   background-color: var(--overlay-background-color);
-  padding: 0.4rem;
+  padding: 0.5rem;
   border-radius: 50%;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   transition: color 0.3s, background-color 0.3s;
 
   &:hover {
-    color: var(--link-hover-color);
+    color: var(--aquamarine);
     background-color: var(--background-color);
+    i {
+      filter: drop-shadow(2px 2px var(--link-hover-color));
+    }
   }
 
   @include tablet {
     top: 4rem;
-    right: 2.5%; 
-    left: auto; 
-    font-size: 1.9rem;}
+    right: 2.5%;
+    left: auto;
+    font-size: 2rem;
+  }
 
   @include desktop {
-    top: 5rem;
-
-  
+    top: 88%;
+    font-size: 2rem;
   }
 }

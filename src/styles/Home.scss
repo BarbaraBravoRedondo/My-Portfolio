@@ -6,23 +6,81 @@
 @import 'core/fonts';
 @import './App.scss';
 
-.knowledges{
-    display: flex;
-    flex-direction: column;
+.knowledges {
+  display: flex;
+  flex-direction: column;
 }
-.home-container{
+.home-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-.about_world {
-    font-size: 1.6em;
-    color: $maincolor;
-    @include tablet {
-      padding-top: 1%;
-      font-size: 2em;
+  width: 100%;
+  
+    &_topContainer {
+      margin-top: 2%;
+      @include desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 4%;
+        font-weight: 700;
+        align-content: stretch;
+        align-items: center;
+      }
     }
-    @include desktop {
-      font-size: 2em;
-      padding-bottom: 2%;
+
+    &_world {
+      font-size: 1.6em;
+      color: $maincolor;
+      margin-bottom: 1%;
+
+      @include tablet {
+        font-size: 2em;
+      }
+      @include desktop {
+        text-align: right;
+        font-size: 2em;
+        width: 85%;
+      }
     }
-  }}
+    &__txt {
+      flex-direction: row;
+      text-align: center;
+      margin-bottom: 3.5rem;
+      max-width: 80vw;
+      font-weight: 700;
+
+      @include desktop {
+        max-width: 60vw;
+
+        font-size: 0.9em; text-align: left;
+
+        text-align: justify;
+      }
+
+      &__name {
+        padding: 40px;
+        margin-top: 1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding:0px;
+        font-family:"Sofadi One", system-ui;
+       
+        @include desktop { 
+          font-size: 3rem;
+          margin-bottom: 1rem;
+         
+        }
+      }
+      &__subtitle{
+       font-size: larger;
+       font-weight: 500;
+      color: var(--overlay-background-color);
+      }
+      &__resume{
+        font-style: italic;
+      }
+    }
+  
+
+  }

@@ -14,6 +14,7 @@ function Header() {
       </Link>
 
       <nav>
+        
         <ul className="header__nav">
           <li>
             <Link className="link" to="/about" title="ir a sobre mí">

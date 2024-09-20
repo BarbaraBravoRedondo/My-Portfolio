@@ -16,11 +16,12 @@
 :root {
   --background-color: #000; 
   --text-color: #fff;
-  --link-color: #ccc; 
-  --link-hover-color: #aaa; 
+
+  --link-hover-color: #aaa3a3; 
   --overlay-background-color: #f0f0f0;
-  --aquamarine: aquamarine;
+  --aquamarine: #{$maincolor};
   --shadow-pic:#{$lightcolor} ;
+ --HomeButton:#{$darkcolor};
 }
 
 [data-theme="light"] {
@@ -28,9 +29,10 @@
   --text-color: #090000;
   --link-color: #000; 
   --link-hover-color: #00bea1; 
-  --aquamarine: #108390;
+  --aquamarine: #{$darkcolor};
   --overlay-background-color: #0a0303;
   --shadow-pic: #{$maincolor};
+  --HomeButton:#{$maincolor};
 }
 
 body {
