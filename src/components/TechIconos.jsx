@@ -21,18 +21,18 @@ function TechIconos(props) {
   };
   const getIconJs = (tecnologies) => {
     if (tecnologies.toLowerCase().includes('js')) {
-      return <i className="fa-brands fa-xl fa-js"></i>;
+      return  <a className='tecnI'><i className="fa-brands fa-xl fa-js"></i></a>;
     }
   };
   const getIconNode = (tecnologies) => {
     if (tecnologies.toLowerCase().includes('node')) {
-      return <i className="fa-brands fa-xl fa-node-js"></i>;
+      return <a className='tecnI'><i className="fa-brands fa-xl fa-node-js"></i></a>;
     }
   };
 
   const getIconApi = (tecnologies) => {
     if (tecnologies.toLowerCase().includes('api')) {
-      return <i className="fa-solid fa-xl fa-cloud iconic"></i>;
+      return <a className='tecnI'><i className="fa-solid fa-xl fa-cloud iconic"></i></a>;
     }
   };
   const getIconSql = (tecnologies) => {

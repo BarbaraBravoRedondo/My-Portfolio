@@ -96,11 +96,11 @@
       &-job {
         @include mobile {
           padding-bottom: 3px;
-          background-color: rgb(249, 249, 249);
-          color: rgb(39, 38, 38); 
+          background-color: rgba(18, 212, 163, 0.563);
+          color: rgb(34, 28, 28); 
           padding: 2%;
           line-height: 1;
-          font-weight: 400;
+          font-weight: 600;
           margin:1% 0;
         }
         @include tablet {
@@ -114,8 +114,10 @@
         }
       }
       &-company {
+        font-weight: 500;
         padding-bottom: 5px;
       color:var(--aquamarine);
+font-style: oblique;
 
       
 

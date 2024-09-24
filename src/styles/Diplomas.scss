@@ -1,15 +1,16 @@
 @import 'core/variables';
 @import 'core/mediaqueries';
 @import 'core/fonts';
+@import './App.scss';
 
 .title{
 width: 100vw;
-background:$maincolor;
-color:$darkcolor;
+background-color:rgb(107, 221, 183, 0.5);
+color:var(--overlay-background-color);
 font-weight: 800;
 text-align: center;
-border-top: $color-pistachio solid 4px;
-border-bottom: $color-pistachio solid 4px;
+border-top: $maincolor solid 4px;
+border-bottom: $maincolor solid 4px;
 box-shadow: white 3px;
 text-transform: uppercase;
 margin-top: 5%;

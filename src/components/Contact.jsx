@@ -20,7 +20,7 @@ function Contact() {
   };
 
   return (
-    <div className=" font-light">
+    <div className="  contact">
       <form className='contact__form' onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="email">Your Email:</label>

@@ -31,8 +31,8 @@ const ThemeToggle = () => {
       onClick={toggleTheme}
     >
       <div className="slider">
-        <i className="fas fa-sun sun-icon"></i>
-        <i className="fas fa-moon moon-icon"></i>
+         <i className="fas fa-moon moon-icon"></i> <i className="fas fa-sun sun-icon"></i>
+      
       </div>
     </div>
   );

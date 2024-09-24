@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import LOGO from'../images/Beige Classy Modern Initials Name Logo (4).png'
+import LOGO from'../images/logo.jpg'
 import  ThemeToggle from './ThemeToggle';
 import '../styles/App.scss'
 

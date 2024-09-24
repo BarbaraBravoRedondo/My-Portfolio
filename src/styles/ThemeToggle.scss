@@ -1,82 +1,79 @@
-@import "core/mediaqueries";
-@import "core/variables";
+@import 'core/mediaqueries';
+@import 'core/variables';
 
 .switch {
   position: absolute;
   top: 10px;
   right: 10px;
-  z-index: 1000; 
-  width: 60px; 
-  height: 30px; 
+  z-index: 1000;
+  width: 60px;
+  height: 30px;
   display: flex;
   align-items: center;
   cursor: pointer;
   transition: background-color 0.4s;
 }
 
-
 .slider {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: #ccc;
-  border-radius: 15px; 
+  background-color: #000000;
+  border-radius: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 5px;
   box-sizing: border-box;
+  border: 2px solid rgb(17, 176, 142);
 }
-
-
 .slider::before {
-  content: "";
+  content: '';
   position: absolute;
-  height: 24px; 
-  width: 24px; 
+  height: 24px;
+  width: 24px;
   border-radius: 50%;
-  background-color: $maincolor;
-  transition: transform 0.4s;
+  background: linear-gradient(217deg, rgb(17, 176, 142), cyan),
+    linear-gradient(127deg, rgb(229, 229, 35), deepskyblue),
+    linear-gradient(336deg, rgb(0, 255, 157), rgb(78, 172, 175)); /* Rojo y azul */
+  transition: transform 0.1s;
   top: 50%;
-  left: 4px;
+  left: 2px;
   transform: translateY(-50%);
+  z-index: 2000;
 }
-
 
 .switch.active .slider {
   background-color: rgb(18, 17, 17);
-  border:px solid $darkcolor
 }
 
 .switch.active .slider::before {
   transform: translateX(30px) translateY(-50%);
 }
 
-
 .sun-icon,
 .moon-icon {
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   font-size: 16px;
 }
 
 .sun-icon {
-  color: #ffce09;
+  color: #fefefe;
 }
 
 .moon-icon {
-  color: #333;
+  color: #f1e6e6;
 }
-
 
 @include tablet {
   .switch {
-    width: 70px; 
-    height: 35px; 
+    width: 70px;
+    height: 35px;
   }
 
   .slider {
-    border-radius: 17px; 
+    border-radius: 17px;
     padding: 0 7px;
   }
 
@@ -86,39 +83,37 @@
   }
 
   .switch.active .slider::before {
-    transform: translateX(35px) translateY(-50%); 
+    transform: translateX(35px) translateY(-50%);
   }
 
   .sun-icon,
   .moon-icon {
-    font-size: 18px; 
+    font-size: 18px;
   }
 }
 
-
 @include desktop {
   .switch {
-    width: 80px; 
-    height: 40px; 
+    width: 80px;
+    height: 40px;
   }
 
   .slider {
-    border-radius: 20px; 
+    border-radius: 20px;
     padding: 0 10px;
   }
 
   .slider::before {
-    height: 32px; 
+    height: 32px;
     width: 32px;
   }
 
   .switch.active .slider::before {
-    transform: translateX(40px) translateY(-50%); 
+    transform: translateX(40px) translateY(-50%);
   }
 
   .sun-icon,
   .moon-icon {
-    font-size: 20px; 
+    font-size: 20px;
   }
 }
-
