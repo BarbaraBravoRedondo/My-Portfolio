@@ -10,6 +10,7 @@ import series from '../images/series.png';
 import mario from '../images/mario.png';
 import owen from '../images/owen-wilson.png';
 import hangman from '../images/hangman.png';
+import ramen from '../images/ramen.png';
 
 function ProjectList() {
   const imgSrcMap = {
@@ -19,6 +20,7 @@ function ProjectList() {
     'owen-wilson': owen,
     hangman,
     series,
+    ramen
   };
 
   return (

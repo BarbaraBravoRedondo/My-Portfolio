@@ -1,7 +1,7 @@
 [
     {
       "title": "Gnomes-War",
-      "subtitle": "Own proyect in Adalab",
+      "subtitle": "Own proyect ",
       "tecnologies": "html, css, JS",
       "nameimg": "gnomes",
       "description": "'GNOMES WAR' is a playful rock-paper-scissors game featuring emojis representing elements—🍃 (plant), 🔥 (fire), and 💧 (water). Test your luck against the computer's random choices in this fun battle…",
@@ -65,6 +65,17 @@
       "page": "https://barbarabravoredondo.github.io/Whack-a-Mario/",
       "year": 2023,
       "id": 6
+    },
+    {
+      "title": "Amen-Ramen",
+      "subtitle": "Own proyect ",
+      "tecnologies": "html, css, JS, React",
+      "nameimg": "ramen",
+      "description": "E-commerce about an Asian restaurant",
+      "github": "https://github.com/BarbaraBravoRedondo/Amen-Ramen",
+      "page": "https://barbarabravoredondo.github.io/Amen-Ra",
+      "year": 2024,
+      "id": 7
     }
   ]
   
