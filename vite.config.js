@@ -16,10 +16,7 @@ export default defineConfig({
   server: {
     host: '0.0.0.0', 
     port: 3000,    
-    https: {
-      key: fs.readFileSync(path.resolve(__dirname, 'path/to/your/server.key')),
-      cert: fs.readFileSync(path.resolve(__dirname, 'path/to/your/server.crt')),
-    },
+
     watch: {
       usePolling: true,
       interval: 100,
