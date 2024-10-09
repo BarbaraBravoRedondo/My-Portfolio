@@ -12,7 +12,7 @@ const __dirname = dirname(__filename);
 // Configuración de Vite
 export default defineConfig({
   plugins: [react()],
-  base: "/My-Portfolio/",
+  base: "/",
   server: {
     host: '0.0.0.0', 
     port: 3000,    
