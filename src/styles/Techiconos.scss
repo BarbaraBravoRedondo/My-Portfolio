@@ -10,6 +10,9 @@
   display: flex;
   gap: 0.2rem;
   align-items: center;
+  @include desktop {
+    display: none;
+  }
 
   .fa-xl::before {
     font-size: 1.4rem;
@@ -26,6 +29,9 @@
   &__img {
     height: 1.4em;
     object-fit: contain;
+    @include desktop {
+      display: none;
+    }
 
   }
 }

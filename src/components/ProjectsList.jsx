@@ -11,7 +11,7 @@ import mario from '../images/mario.png';
 import owen from '../images/owen-wilson.png';
 import hangman from '../images/hangman.png';
 import ramen from '../images/ramen.png';
-
+import detective from '../images/detective.png';
 function ProjectList() {
   const imgSrcMap = {
     gnomes,
@@ -20,7 +20,8 @@ function ProjectList() {
     'owen-wilson': owen,
     hangman,
     series,
-    ramen
+    ramen,
+    detective
   };
 
   return (
