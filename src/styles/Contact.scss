@@ -5,10 +5,20 @@
 @import "core/iconos";
 @import "core/fonts";
 .contact {
+  padding-top: 180px;
   display: flex;
   justify-content: center;
  width: 100%;
  align-items: flex-start;
+
+ @include tablet {
+  padding-top: 270px;
+}
+@include desktop {
+  padding-top: 170px;
+margin-bottom: 80px;
+
+}
 
 
   &__txt {

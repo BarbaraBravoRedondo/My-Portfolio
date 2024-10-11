@@ -16,14 +16,18 @@
   margin-top: 2%;
   margin-bottom: 7%;
   font-size: 1em;
+  padding-top: 180px;
+
   @include tablet {
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 270px;
   }
-  @include desktop{
+  @include desktop {
     margin: 7% 10%;
+    padding-top: 150px;
 
-align-items: center;
+    align-items: center;
   }
 
   .project-item {
@@ -36,8 +40,8 @@ align-items: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     // background-color:var( --shadow-pic);
     background: linear-gradient(217deg, rgb(94, 234, 203), rgb(52, 172, 158)),
-    linear-gradient(127deg, rgb(244, 244, 59), rgb(29, 203, 171)),
-    linear-gradient(336deg, rgb(70, 230, 169), rgb(12, 187, 140)); /* Rojo y azul */
+      linear-gradient(127deg, rgb(244, 244, 59), rgb(29, 203, 171)),
+      linear-gradient(336deg, rgb(70, 230, 169), rgb(12, 187, 140)); /* Rojo y azul */
 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
     transition: transform 0.9s;
