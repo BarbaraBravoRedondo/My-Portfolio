@@ -14,25 +14,40 @@
   padding-top: 2%;
   padding-bottom: 0px;
   height: max-content;
+  background-color:var( --background-color);
+
+  position: fixed;
+  z-index: 1000;
+  top:0;
+  left:0;
+  width: 100%;
+
 
   @include desktop {
     flex-direction: row;
     align-items: flex-start;
     justify-content:flex-start;
+    padding-top: 0px;
+    height: 100px;
 
     gap: 0px;
   }
   .LOGO {
-    width: 50%;
+    width: 30%;
     border: $maincolor 5px solid;
     @include desktop{
       width: 44%;
+      position: absolute;
+      top:20px;
+      left:40px;
+      width: 6%;
     }
   }
 
   &__nav {
     display: flex;
     justify-content: space-around;
+  
 
     gap: 1rem;
 
@@ -44,9 +59,10 @@
     }
     @include desktop {
       align-items: flex-start;
-      justify-content: space-evenly;
+      justify-content: center;
       text-transform: uppercase;
-      gap: 5rem;
+      width: 100vw;
+      text-shadow: 2px 1px 2px var(--navLink);
 
       padding-top: 2%;
       align-content: flex-start;

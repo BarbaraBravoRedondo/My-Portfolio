@@ -22,6 +22,7 @@
   --aquamarine: #{$maincolor};
   --shadow-pic:#{$lightcolor} ;
  --HomeButton:#{$darkcolor};
+ --navLink:#{$maincolor};
 }
 
 [data-theme="light"] {
@@ -33,6 +34,7 @@
   --overlay-background-color: #0a0303;
   --shadow-pic: #{$maincolor};
   --HomeButton:#{$maincolor};
+  --navLink:#{$mediumcolor};
 }
 
 body {

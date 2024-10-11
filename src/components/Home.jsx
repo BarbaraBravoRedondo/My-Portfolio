@@ -3,6 +3,8 @@ import Diplomas from './Diplomas';
 import Stack from './Stack';
 import picture from '../images/me.jpg';
 import '../styles/Home.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
   const greetings = [
@@ -50,6 +52,9 @@ const Home = () => {
             foster creativity and continuous learning''
           </p>
         </article>
+      </div>
+      <div className="arrow-icon">
+        <FontAwesomeIcon icon={faChevronDown} />
       </div>
 
       <Stack />
