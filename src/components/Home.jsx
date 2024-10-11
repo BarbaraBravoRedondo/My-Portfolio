@@ -42,7 +42,7 @@ const Home = () => {
           <img className="project__imgA" src={picture} alt="Profile" />
         </div>
         <article className="home-container__txt font-light">
-          <p className="home-container__txt__name">Bárbara Bravo Redondo.</p>
+          <p className="home-container__txt__name">Bárbara Bravo Redondo</p>
           <p className="home-container__txt__subtitle">-Jr.Full-stack developer-</p>
           {/* <p className="home-container__txt__parg">
             I’m constantly growing in both frontend and backend development, with strong skills in teamwork, communication, and adaptability.

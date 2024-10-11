@@ -10,41 +10,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-
-  
-
-}
-
-.project {
-  height: 100%;
-  margin: 5% auto;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-
-
-
-
-  &__imgA {
-    width: 10rem;
-    height: 100%;
-    object-fit: cover;
-    box-shadow: 0 0 15px 5px  var(--shadow-pic);;
-  
-    @include tablet {
-      width: 18rem;
-    }
-
-    @include desktop {
-   
-
-      display: block;
-    }
+  padding-top: 210px;
+  @include tablet{padding-top: 270px;}
+  @include desktop {
+    padding-top: 150px;
   }
+
+
+  
+
 }
+
+
 a {
   display: flex;
   justify-content: center;
