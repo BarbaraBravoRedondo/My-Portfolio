@@ -10,7 +10,6 @@
   flex-direction: column;
   gap: 2rem;
   text-align: center;
-
   justify-content: center;
   align-items: center;
   margin-top: 2%;
@@ -23,10 +22,10 @@
     flex-wrap: wrap;
     padding-top: 270px;
   }
+
   @include desktop {
     margin: 7% 10%;
-    padding-top: 150px;
-
+    padding-top: 80px;
     align-items: center;
   }
 
@@ -38,20 +37,82 @@
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    // background-color:var( --shadow-pic);
     background: linear-gradient(217deg, rgb(94, 234, 203), rgb(52, 172, 158)),
       linear-gradient(127deg, rgb(244, 244, 59), rgb(29, 203, 171)),
-      linear-gradient(336deg, rgb(70, 230, 169), rgb(12, 187, 140)); /* Rojo y azul */
-
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-    transition: transform 0.9s;
-    transition: transform 0.1s;
+      linear-gradient(336deg, rgb(70, 230, 169), rgb(12, 187, 140));
+    transition: transform 0.3s;
     width: 80%;
+    position: relative;
+    overflow: hidden;
+
     @include tablet {
       width: 40%;
     }
+
     @include desktop {
       width: 30%;
+      &:hover .project__hover {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .project__hover {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    
+
+      background-color: var(--aquamarine);
+      font-size: 0.9em;
+      color: var(--background-color);
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 1rem;
+      text-align: center;
+      padding: 1rem;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+      .hover-links {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        color: var(--background-color);
+
+        justify-content: space-around;
+        align-items: center;
+        gap: 1.6rem;
+        width: 70%;
+
+        padding: 1rem;
+        background-color: #d5d5d5;
+        border-radius: 10px;
+        font-size: 2em;
+      }
+      p {
+        font-size:0.6em;
+        margin-bottom: 10px;
+        height: fit-content;
+        line-height: 1.5;
+        text-align: inherit;
+      }
+
+      .icons-hover {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+
+        .project-item:hover & {
+          background-color: $darkcolor;
+          opacity: 10;
+        }
+      }
     }
 
     .project__imgP {
@@ -59,6 +120,7 @@
       height: 180px;
       border-radius: 10px;
       object-fit: cover;
+
       @include tablet {
         width: 100%;
       }
@@ -69,24 +131,26 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 1.8rem;
+      gap: 1.6rem;
       width: 100%;
       height: 100%;
       padding: 1rem;
       background-color: #f0f0f0;
       border-radius: 10px;
+
       @include tablet {
         height: 13rem;
         width: 100%;
       }
+
       &__repo {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         gap: 1rem;
+
         i {
           font-size: 1.7em;
-
           border-radius: 50%;
           padding: 0;
         }
@@ -97,11 +161,14 @@
         color: #100303;
         font-weight: 600;
         font-family: 'Righteous', sans-serif;
+
         @include tablet {
-          font-size: 2rem;
+          font-size: 1.6rem;
         }
+      }
+      .mvl-icons {
         @include desktop {
-          font-size: 2rem;
+          display: none;
         }
       }
 

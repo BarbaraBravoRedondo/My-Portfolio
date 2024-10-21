@@ -1,9 +1,15 @@
+@import './reset';
+@import './variables';
+@import './mediaqueries';
+@import './links';
+
+@import './fonts';
+
 .fa-brands,
 .fa-solid,
+.fa-xl,
 .project__overlay__icon {
   line-height: 1em;
-  color: rgb(23, 109, 106);
-  @include desktop {
-    display: none;
-  }
+  color:var(--shadow-pic)
+
 }

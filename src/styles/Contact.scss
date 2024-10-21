@@ -1,26 +1,28 @@
-@import "core/reset";
-@import "core/variables";
-@import "core/mediaqueries";
-@import "core/links";
-@import "core/iconos";
-@import "core/fonts";
+@import 'core/reset';
+@import 'core/variables';
+@import 'core/mediaqueries';
+@import 'core/links';
+@import 'core/iconos';
+@import 'core/fonts';
 .contact {
-  padding-top: 210px;
+  padding-top: 50%;
   display: flex;
   justify-content: center;
- width: 100%;
- align-items: flex-start;
+  width: 100%;
+  align-items: center;
+  align-content: center;
 
 
- @include tablet {
-  padding-top: 270px;
-}
-@include desktop {
-  padding-top: 170px;
-margin-bottom: 80px;
-
-}
-
+  @include tablet {
+padding-top: 30%;
+    
+  }
+  @include desktop {
+  padding-top: 15%;
+    margin-bottom: 80px;
+    flex-grow: 1;
+    height: 70vh;
+  }
 
   &__txt {
     text-align: center;
@@ -31,27 +33,27 @@ margin-bottom: 80px;
 }
 
 .contact__form {
-width: 80%;
-justify-content: center;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-@include tablet{width: 50%;
-margin-bottom: 2.5%;
-margin-top: 4%;}
-@include desktop{
-  width: 30%;
-  margin-top: 0;
-  margin-bottom: 0;
+  width: 80%;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  @include tablet {
+    width: 50%;
+    margin-bottom: 2.5%;
+    margin-top: 4%;
+  }
+  @include desktop {
+    width: 30%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
-
-
-} 
-
-.form-group {  
-  margin-bottom: 20px;  font-weight: 600;
-;}
+.form-group {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
 
 label {
   display: block;
@@ -59,46 +61,47 @@ label {
   margin-bottom: 5px;
 }
 
-input[type="email"],
+input[type='email'],
 textarea {
   width: 90%;
-background-color: rgba(212, 240, 231, 0.988);
+  background-color: rgba(212, 240, 231, 0.988);
   padding: 8px;
   font-size: 20px;
   border-radius: 5px;
   border: 3px solid $maincolor;
-  @include tablet{
+  @include tablet {
     height: 15px;
   }
 }
 textarea {
-height:130px;
-@include tablet{
-  height: 200px
-
+  height: 120px;
+  @include tablet {
+    height: 200px;
+  }
+  @include desktop {
+    height: 120px;
+  }
 }
-@include desktop{
-  height: 120px
-};
-}
-input[type="email"]{
+input[type='email'] {
   height: 10px;
-  @include tablet{height: 15px;}
-  @include desktop{}
+  @include tablet {
+    height: 15px;
+  }
+  @include desktop {
+  }
 }
 
 button {
   padding: 10px 20px;
-  background-color:rgb(180, 173, 173);
+  background-color: rgb(180, 173, 173);
   color: $darkcolor;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-
 }
 
 button:hover {
-  background-color: $maincolor; 
-  color: $lightcolor; 
+  background-color: $maincolor;
+  color: $lightcolor;
 }

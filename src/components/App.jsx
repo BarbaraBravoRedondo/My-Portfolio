@@ -12,6 +12,7 @@ import NotFound from './NotFound';
 function App() {
   return (
     <>
+    <div className='wrapper'>
       <Header />
       <main>
         <HomeButton /> 
@@ -41,7 +42,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
-    </>
+    </div></>
   );
 }
 
