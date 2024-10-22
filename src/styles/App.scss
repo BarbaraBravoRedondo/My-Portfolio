@@ -34,7 +34,7 @@
   --overlay-background-color: #0a0303;
   --shadow-pic: #{$maincolor};
   --HomeButton:#{$maincolor};
-  --navLink:#{$mediumcolor};
+  --navLink:#{$lightcolor};
 }
 
 body {
@@ -44,12 +44,15 @@ body {
 }
 
 a {
-  color: var(--link-color);
+ color:$darkcolor;
   text-decoration: none;
   transition: color 0.3s ease;
+
+  @include desktop{
+ }
   
   &:hover,
   &:focus {
-    color:purple;
+    color: rgb(215, 40, 215)
   }
 }

@@ -12,6 +12,7 @@
   text-align: center;
   justify-content: center;
   align-items: center;
+  align-content: stretch;
   margin-top: 2%;
   margin-bottom: 7%;
   font-size: 1em;
@@ -25,7 +26,7 @@
 
   @include desktop {
     margin: 7% 10%;
-    padding-top: 80px;
+    padding-top: 70px;
     align-items: center;
   }
 
@@ -41,16 +42,18 @@
       linear-gradient(127deg, rgb(244, 244, 59), rgb(29, 203, 171)),
       linear-gradient(336deg, rgb(70, 230, 169), rgb(12, 187, 140));
     transition: transform 0.3s;
-    width: 80%;
+    width: 85%;
     position: relative;
     overflow: hidden;
 
     @include tablet {
       width: 40%;
+      gap:0.5rem
     }
 
     @include desktop {
       width: 30%;
+
       &:hover .project__hover {
         opacity: 1;
         transform: translateY(0);
@@ -64,15 +67,13 @@
       left: 0;
       width: 100%;
       height: 100%;
-    
-
       background-color: var(--aquamarine);
       font-size: 0.9em;
       color: var(--background-color);
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      gap: 1rem;
+      gap: 0.3rem;
       text-align: center;
       padding: 1rem;
       opacity: 0;
@@ -80,21 +81,21 @@
       .hover-links {
         display: flex;
         flex-direction: row;
-        margin-top: 10px;
-        color: var(--background-color);
-
+        margin-top: 6px;
+        color: var(--aquamarina);
+        height: fit-content;
         justify-content: space-around;
         align-items: center;
         gap: 1.6rem;
         width: 70%;
-
         padding: 1rem;
         background-color: #d5d5d5;
         border-radius: 10px;
         font-size: 2em;
+        padding: 5px;
       }
       p {
-        font-size:0.6em;
+        font-size: 0.55em;
         margin-bottom: 10px;
         height: fit-content;
         line-height: 1.5;
@@ -107,6 +108,7 @@
         gap: 0.5rem;
         opacity: 1;
         transition: opacity 0.3s ease-in-out;
+        height: 2%;
 
         .project-item:hover & {
           background-color: $darkcolor;
@@ -119,19 +121,19 @@
       width: 100%;
       height: 180px;
       border-radius: 10px;
-      object-fit: cover;
+      object-fit:cover;
 
-      @include tablet {
-        width: 100%;
+      @include desktop {
+        height: 237px;
       }
     }
 
     .project__overlay {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
-      gap: 1.6rem;
+      gap: 1rem;
       width: 100%;
       height: 100%;
       padding: 1rem;
@@ -139,8 +141,11 @@
       border-radius: 10px;
 
       @include tablet {
-        height: 13rem;
+        height: 10rem;
         width: 100%;
+      }
+      @include desktop {
+        height: 7rem;
       }
 
       &__repo {
@@ -153,6 +158,9 @@
           font-size: 1.7em;
           border-radius: 50%;
           padding: 0;
+        }
+        @include desktop {
+          display: none;
         }
       }
 
@@ -167,6 +175,10 @@
         }
       }
       .mvl-icons {
+        .fa-brands,
+        .fa-solid {
+          color: $maincolor !important;
+        }
         @include desktop {
           display: none;
         }
@@ -174,12 +186,7 @@
 
       a {
         text-decoration: none;
-        color: $darkcolor;
         cursor: pointer;
-
-        &:hover {
-          color: $maincolor;
-        }
       }
     }
   }

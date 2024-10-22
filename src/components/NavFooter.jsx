@@ -5,7 +5,7 @@ function NavFooter() {
     <ul className="footer__nav">
       <li>
         <a
-          className="link"
+          className="footerIcons"
           href="https://www.linkedin.com/in/barbara-bravo-redondo/"
           title="Go to Barbara's Website"
           target="_blank"
@@ -16,7 +16,7 @@ function NavFooter() {
       </li>
       <li>
         <a
-          className="link"
+          className="footerIcons"
           href="https://github.com/BarbaraBravoRedondo"
           title="Go to Barbara's GitHub"
           target="_blank"
@@ -27,7 +27,7 @@ function NavFooter() {
       </li>
       <li>
         <a
-          className="link"
+          className="footerIcons"
           href="mailto:barbarabravoredondo@gmail.com@gmail.com"
           title="Send an email"
           target="_blank"

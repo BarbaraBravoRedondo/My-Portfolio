@@ -5,11 +5,16 @@
 
 @import './fonts';
 
-.fa-brands,
-.fa-solid,
-.fa-xl,
-.project__overlay__icon {
-  line-height: 1em;
-  color:var(--shadow-pic)
+// .fa-brands,
+// .fa-solid,
+// .fa-xl,
+// .project__overlay__icon {
+//   line-height: 1em;
+//   color:var(--aquamarine)
 
-}
+
+// }
+
+   
+ .project__overlay__icon{   color:var(--shadow-pic)
+ }

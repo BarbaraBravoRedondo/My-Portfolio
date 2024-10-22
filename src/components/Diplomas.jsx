@@ -84,11 +84,13 @@ const Diplomas = () => {
       </Swiper>
 
       <Swiper
+       modules={[Navigation, Pagination, Thumbs, Autoplay]}
         onSwiper={setThumbsSwiper}
-        slidesPerView={4}
+        slidesPerView={7}
         spaceBetween={10}
         watchSlidesProgress={true}
         className="swiper-thumbs"
+        pagination={{ clickable: true }} 
       >
         <SwiperSlide>
           <img
@@ -116,6 +118,27 @@ const Diplomas = () => {
             className="PicSlideD"
             src={Certificate4}
             alt="Miniatura Certificación 4"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="PicSlideD"
+            src={Certificate5}
+            alt="Miniatura Certificación 5"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="PicSlideD"
+            src={Certificate6}
+            alt="Miniatura Certificación 6"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="PicSlideD"
+            src={Certificate7}
+            alt="Miniatura Certificación 7"
           />
         </SwiperSlide>
       </Swiper>

@@ -4,7 +4,7 @@
     "subtitle": "Own project",
     "tecnologies": "html, css, JS",
     "nameimg": "gnomes",
-    "description": "'Gnomes War' is a rock-paper-scissors game implemented using HTML, CSS, and JavaScript. The application leverages emoji representations for the elements—🍃 (plant), 🔥 (fire), and 💧 (water)—to create an engaging user interface. The game logic utilizes random number generation to simulate the computer's choices, ensuring a varied gameplay experience. The design incorporates responsive styling for compatibility across devices.",
+    "description": "'Gnomes War' is a rock-paper-scissors game implemented using HTML, SCSS, and JavaScript. The web leverages emojis for the elements—🍃 (plant), 🔥 (fire), and 💧 (water)—to create an engaging user interface. The game logic utilizes random number generation to simulate the computer's choices, ensuring a varied gameplay experience. The design incorporates responsive styling for compatibility across devices.",
     "github": "https://github.com/BarbaraBravoRedondo/Gnomes-War",
     "page": "https://barbarabravoredondo.github.io/Gnomes-War/",
     "year": 2023,
@@ -68,7 +68,7 @@
     {
       "title": "Amen-Ramen",
       "subtitle": "Own proyect ",
-      "tecnologies": "html, css, JS, React",
+      "tecnologies": "html, css, JS, React, TailwindCSS",
       "nameimg": "ramen",
       "description": "E-commerce platform for an Asian restaurant, where users can browse various dishes, add them to the cart, and complete the purchase. The website is fully responsive and incorporates modern UI elements to enhance user experience. Features include dynamic search, filtering, and the ability to customize orders.",
       "github": "https://github.com/BarbaraBravoRedondo/Amen-Ramen",

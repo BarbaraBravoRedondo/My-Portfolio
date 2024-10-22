@@ -21,6 +21,7 @@
   top: 0;
   left: 0;
   width: 100%;
+
   @include tablet {
     margin-bottom: 270px;
   }
@@ -34,7 +35,6 @@
     justify-content: flex-start;
     padding-top: 0px;
     height: 100px;
-
     gap: 0px;
   }
   .LOGO {
@@ -69,6 +69,7 @@
       width: 100vw;
       text-shadow: 2px 1px 2px var(--navLink);
 
+
       padding-top: 2%;
       align-content: flex-start;
       margin-top: 0;
@@ -79,7 +80,9 @@
 .linkNav {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;a {
+  font-weight: 600;      
+}
 
   @include desktop {
     width: 20vw;
@@ -89,6 +92,4 @@
     }
   }
 }
-a {
-  font-weight: 600;
-}
+

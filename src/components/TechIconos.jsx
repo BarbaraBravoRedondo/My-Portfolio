@@ -1,44 +1,29 @@
-import React from 'react';
+
 import PropTypes from 'prop-types';
+import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaCloud } from 'react-icons/fa';
+import { SiJavascript, SiTailwindcss } from 'react-icons/si';
+import { DiMysql } from 'react-icons/di';
 import '../styles/TechIconos.scss';
 
 function TechIconos(props) {
-  const tecnologies = props.tecnologies;
-
-  const getIcon = (iconClass, techName) => (
-    <i 
-      className={`fa-brands fa-xl ${iconClass}`} 
-      title={techName} 
-      key={techName}
-    ></i>
-  );
+  const tecnologies = props.tecnologies.toLowerCase();
 
   return (
     <section className="tech">
-      {tecnologies.toLowerCase().includes('html') && getIcon('fa-html5', 'HTML')}
-      {tecnologies.toLowerCase().includes('css') && getIcon('fa-css3', 'CSS')}
-      {tecnologies.toLowerCase().includes('react') && getIcon('fa-react', 'React')}
-      {tecnologies.toLowerCase().includes('js') && getIcon('fa-js', 'JavaScript')}
-      {tecnologies.toLowerCase().includes('node') && getIcon('fa-node-js', 'Node.js')}
-      {tecnologies.toLowerCase().includes('api') && (
-        <i 
-          className="fa-solid fa-cloud"
-          title="API" 
-          key="API"
-        ></i>
-      )} {/* Usamos el icono de servidor para API */}
-      {tecnologies.toLowerCase().includes('mysql') && (
-        <i 
-          className="fa-solid fa-database" 
-          title="MySQL" 
-          key="MySQL"
-        ></i>
-      )} {/* Usamos un icono de base de datos para MySQL */}
-
+      {tecnologies.includes('html') && <FaHtml5 className="footerIcons project__overlay__icon" title="HTML" />}
+      {tecnologies.includes('css') && <FaCss3Alt className="footerIcons project__overlay__icon" title="CSS" />}
+      {tecnologies.includes('react') && <FaReact className="footerIcons project__overlay__icon" title="React" />}
+      {tecnologies.includes('js') && <SiJavascript className="footerIcons project__overlay__icon" title="JavaScript" />}
+      {tecnologies.includes('node') && <FaNodeJs className="footerIcons project__overlay__icon" title="Node.js" />}
+      {tecnologies.includes('api') && <FaCloud className="footerIcons project__overlay__icon" title="API" />}
+      {tecnologies.includes('mysql') && <DiMysql className="footerIcons project__overlay__icon" title="MySQL" />}
+      {tecnologies.includes('tailwind') && <SiTailwindcss className="footerIcons project__overlay__icon" title="TailwindCSS" />}
     </section>
   );
 }
+
 TechIconos.propTypes = {
-  tecnologies: PropTypes.string.isRequired, // Se espera una cadena de texto
+  tecnologies: PropTypes.string.isRequired,
 };
+
 export default TechIconos;

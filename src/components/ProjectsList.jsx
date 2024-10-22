@@ -74,7 +74,7 @@ function ProjectList() {
                 tecnologies={project.tecnologies}
               />
               <div className="hover-links">
-                <a href={project.github} target="_blank" rel="noreferrer">
+                <a className='icons-repo' href={project.github} target="_blank" rel="noreferrer">
                   <i className="fab fa-github"></i>
                 </a>
                 <a
