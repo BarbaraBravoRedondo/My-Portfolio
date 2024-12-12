@@ -2,57 +2,54 @@
 @import 'core/variables';
 @import 'core/mediaqueries';
 @import 'core/links';
-@import 'core/iconos';
 @import 'core/fonts';
 
-
-
 * {
-  box-sizing: content-box; 
+  box-sizing: content-box;
   padding: 0;
   margin: 0;
 }
 
 :root {
-  --background-color: #000; 
+  --background-color: #000;
   --text-color: #fff;
-
-  --link-hover-color: #aaa3a3; 
+  --link-hover-color: #aaa3a3;
   --overlay-background-color: #f0f0f0;
   --aquamarine: #{$maincolor};
-  --shadow-pic:#{$lightcolor} ;
- --HomeButton:#{$darkcolor};
- --navLink:#{$maincolor};
+  --shadow-pic: #{$lightcolor};
+  --HomeButton: #{$darkcolor};
+  --navLink: #{$maincolor};
+}
+::selection {
+  background-color: #{$maincolor};
+  color: var(--text-color);
 }
 
-[data-theme="light"] {
-  --background-color:#F5F5F5; 
+[data-theme='light'] {
+  --background-color: #f5f5f5;
   --text-color: #090000;
-  --link-color: #000; 
-  --link-hover-color: #312e2e; 
+  --link-color: #000;
+  --link-hover-color: #312e2e;
   --aquamarine: #{$darkcolor};
   --overlay-background-color: #0a0303;
   --shadow-pic: #{$maincolor};
-  --HomeButton:#{$maincolor};
-  --navLink:#{$lightcolor};
+  --HomeButton: #{$maincolor};
+  --navLink: #{$lightcolor};
 }
 
 body {
   background-color: var(--background-color);
   color: var(--text-color);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: 0.5s linear color;
 }
 
 a {
- color:$darkcolor;
+  color: $darkcolor;
   text-decoration: none;
   transition: color 0.3s ease;
 
-  @include desktop{
- }
-  
-  &:hover,
-  &:focus {
-    color: rgb(215, 40, 215)
+  &:hover {
+    color: rgb(14, 33, 30);
+    transition: all 0.3s ease;
   }
 }

@@ -2,13 +2,12 @@
 @import 'core/variables';
 @import 'core/mediaqueries';
 @import 'core/links';
-@import 'core/iconos';
 @import 'core/fonts';
 
 .main_sectionExperience {
   color: var(--text-color); 
 
-  scroll-margin-top: 50px;
+
   padding-bottom: 30px;
 
   @include desktop {
@@ -96,7 +95,7 @@
       &-job {
         @include mobile {
           padding-bottom: 3px;
-          background-color: rgba(18, 212, 163, 0.563);
+          background-color: rgba(140, 250, 222, 0.951);
           color: rgb(34, 28, 28); 
           padding: 2%;
           line-height: 1;

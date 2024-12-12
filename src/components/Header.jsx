@@ -10,7 +10,7 @@ function Header() {
   return (
     <header className="header">
       <Link className="linkNav" to="/" title="ir a home">
-        <img  src={LOGO}alt="" className='LOGO'/>
+        <img  src={LOGO} alt="" className='LOGO'/>
       </Link>
 
       <nav>

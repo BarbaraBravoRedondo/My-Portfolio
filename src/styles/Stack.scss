@@ -2,7 +2,6 @@
 @import 'core/variables';
 @import 'core/mediaqueries';
 @import 'core/links';
-@import 'core/iconos';
 @import 'core/fonts';
 
 .knowledges {
@@ -10,13 +9,14 @@
   flex-direction: column;
   align-items: center;
   gap: 50px;
-  
+  width: 100vw;
+
   @include tablet {
     width: 90%;
   }
   @include desktop {
     width: 80%;
-    h2{
+    h2 {
       margin-top: 0;
     }
   }
@@ -71,9 +71,8 @@
   width: 100%;
   height: auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  -webkit-filter: drop-shadow(1px 1px 0px rgb(49, 49, 48))
-    drop-shadow(-1px -1px 0px rgb(3, 1, 1));
-
+  filter: drop-shadow(1px 1px 0px rgb(49, 49, 48));
+  -webkit-filter: drop-shadow(1px 1px 0px rgb(49, 49, 48));
   border-radius: 4px;
   @include tablet {
     width: 90%;
@@ -82,5 +81,5 @@
 
 .icon-container:hover img {
   transform: scale(1.1);
-  filter: drop-shadow(-1px -1px 6px rgb(34, 201, 182));
+  filter: drop-shadow(-1px -1px 6px rgb(113, 134, 131));
 }

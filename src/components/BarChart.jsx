@@ -8,7 +8,7 @@ import {
 } from 'chart.js';
 import '../styles/BarChart.scss'
 
-// Registrar los componentes de Chart.js
+
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const DoughnutChart = () => {

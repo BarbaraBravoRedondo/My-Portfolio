@@ -1,4 +1,4 @@
-import React from 'react';
+
 import '../styles/Diplomas.scss';
 import '../styles/Stack.scss';
 import wind from '../images/wind.png';
@@ -40,7 +40,7 @@ function Stack() {
   ];
 
   return (
-    <div className='knowledges'>
+    <div className='knowledges' id="stack">
       <h2 className="title">STACK:</h2>
       <div className="icon-box">
         {techStack.map((tech, index) => (

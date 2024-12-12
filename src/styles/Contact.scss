@@ -2,23 +2,16 @@
 @import 'core/variables';
 @import 'core/mediaqueries';
 @import 'core/links';
-@import 'core/iconos';
 @import 'core/fonts';
 .contact {
-  padding-top: 50%;
   display: flex;
   justify-content: center;
   width: 100%;
   align-items: center;
   align-content: center;
 
-
-  @include tablet {
-padding-top: 30%;
-    
-  }
   @include desktop {
-  padding-top: 15%;
+    padding-top: 15%;
     margin-bottom: 80px;
     flex-grow: 1;
     height: 70vh;

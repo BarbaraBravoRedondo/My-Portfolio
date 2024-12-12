@@ -2,7 +2,6 @@
 @import 'core/variables';
 @import 'core/mediaqueries';
 @import 'core/links';
-@import 'core/iconos';
 @import 'core/fonts';
 @import './App.scss';
 
@@ -14,58 +13,148 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  padding-top: calc(100px + 20%); 
-  @include tablet {
-    padding-top: 270px;
-  }
+  width: 100vw;
+  padding-top: 20px;
+
   @include desktop {
     padding-top: 150px;
   }
-  .project {
-    height: 100%;
-   
-    margin: 5% auto 0;
-    position: relative;
+
+  .profile {
     display: flex;
+    margin: 5% auto 0;
     justify-content: center;
     align-items: center;
-  
-  
-  
-  
-  
-    &__imgA {
-      width: 10rem;
-      box-shadow: 0 0 15px 5px  var(--shadow-pic);;
-    
-      @include tablet {
-        width: 18rem;
+    position: relative;
+    max-height: max-content;
+
+    min-height: 200px;
+    @include tablet {
+      min-height: 300px;
+    }
+    @include desktop {
+      min-height: 300px;
+      min-width: 200px;
+      margin: auto;
+    }
+    &_circles {
+      position: relative;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .circle {
+        position: absolute;
+        border-radius: 70%;
+        transition: all 0.35s ease;
       }
-  
-    
+
+      .profile_circles_1 {
+        width: 10rem;
+        height: 10rem;
+        transform: translate(18%, 2%);
+        background-color: rgba(7, 197, 174, 0.3);
+        border: 0.2rem dotted rgb(86, 125, 110);
+
+        @include tablet {
+          width: 13rem;
+          height: 13rem;
+        }
+        @include desktop {
+          width: 16rem;
+          height: 16rem;
+        }
+      }
+
+      .profile_circles_2 {
+        width: 10rem;
+        height: 10rem;
+        transform: translate(-10%, 12%);
+        border: 0.11rem dashed var(--text-color);
+        background: rgba(16, 18, 18, 0.1);
+
+        @include tablet {
+          width: 13rem;
+          height: 13rem;
+        }
+        @include desktop {
+          width: 16rem;
+          height: 16rem;
+        }
+      }
+
+      .profile_circles_3 {
+        width: 9rem;
+        height: 9rem;
+        transform: translate(-15%, -20%);
+        background-color: rgb(214, 222, 221, 0.3);
+        border: 0.5rem double #0adfc3;
+
+        @include tablet {
+          width: 12rem;
+          height: 12rem;
+        }
+        @include desktop {
+          width: 16rem;
+          height: 16rem;
+        }
+      }
+
+      .center {
+        width: 10.5rem;
+        height: 10.5rem;
+        transform: translate(0, 0);
+        background-color: $maincolor;
+        @include tablet {
+          width: 20rem;
+          height: 20rem;
+        }
+        @include desktop {
+          width: 18rem;
+          height: 18rem;
+        }
+      }
+
+      &_imgA {
+        position: relative;
+        border-radius: 50%;
+        width: 10rem;
+        height: 10rem;
+        transition: all 0.55s ease;
+        box-shadow: 0 0 15px 5px var(--shadow-pic);
+        object-fit: center center;
+
+        @include tablet {
+          width: 14rem;
+          height: 14rem;
+        }
+        @include desktop {
+          width: 16rem;
+          height: 16rem;
+        }
+      }
     }
   }
   &_topContainer {
-    margin-top: 2%;
     @include desktop {
       margin-top: -90px;
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
-      gap: 4%;
+      justify-content: space-between;
+      gap: 12%;
       font-weight: 700;
       align-content: stretch;
       align-items: center;
-      height: calc(100vh - 100px);
-
+      height: calc(100vh - 90px);
+      width: 70%;
     }
   }
 
   &_world {
     font-size: 1.6em;
-    color: $maincolor; margin-bottom: 10px;
- 
+    color: $maincolor;
+    margin-bottom: 10px;
 
     @include tablet {
       font-size: 2em;
@@ -77,7 +166,6 @@
     }
   }
   &__txt {
-    flex-direction: row;
     text-align: center;
     margin-bottom: 3.5rem;
     max-width: 80vw;
@@ -95,40 +183,58 @@
     &__name {
       padding: 40px;
       margin-top: 1rem;
-      text-transform: uppercase;
       font-weight: 700;
       padding: 0px;
-      font-size: 1em;
-
-      font-family: 'Sofadi One', system-ui;
+      font-size: 1.1em;
+      font-family: 'Parkinsans', sans-serif;
+      font-weight: 400;
+      white-space: nowrap;
+      width: 100%;
 
       @include desktop {
-        font-size: 2.5rem;
+        font-size: 2.7em;
         margin-bottom: 1rem;
       }
     }
     &__subtitle {
-      font-size: larger;
-      font-weight: 500;
+      font-size: 1.2em;
+      font-weight: 200;
       color: var(--overlay-background-color);
     }
     &__resume {
-      margin-top: 10px;
+      margin-top: 30px;
       font-style: italic;
+      font-family: 'Poiret One';
+      display: flex;
+      justify-content: flex-end;
+      font-weight: bolder;
+      @include desktop {
+        margin-left: auto;
+        width: max-content;
+        font-size: 0.8em;
+        position: absolute;
+        top: 67%;
+        left: 60%;
+
+        text-align: center;
+        word-spacing: 0.2px;
+        color: rgba(52, 174, 162, 0.856);
+        width: 550px;
+      }
     }
   }
 }
-.arrow-icon {
+#arrow-icon {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  top: -20px; 
+  top: -20px;
   animation: bounce 1.5s infinite;
-  @include tablet{
-
+  background: transparent;
+  @include tablet {
   }
-  @include desktop{
+  @include desktop {
     top: -100px;
     font-size: 3rem;
   }
@@ -137,7 +243,6 @@
     font-size: 2rem;
     color: $maincolor;
     position: relative;
-    
   }
 }
 

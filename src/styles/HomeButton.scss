@@ -2,9 +2,10 @@
 @import './App.scss';
 
 .home-button {
-  position:fixed;
+  position: fixed;
   top: 1rem;
   left: 1rem;
+  z-index: 3000;
   font-size: 1.2rem;
   color: var(--HomeButton);
   background-color: var(--overlay-background-color);

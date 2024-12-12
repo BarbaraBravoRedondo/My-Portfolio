@@ -1,5 +1,5 @@
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-size: calc(1rem + 0.8vw);
   line-height: 1.6em;
   font-weight: 600;
@@ -7,14 +7,11 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-
-  strong,
-  b {
-    font-weight: 600;
-  }
 }
 
-
+main {
+  flex: 1;
+}
 
 .font-sm {
   font-size: calc(1.6rem + 0.7vw);
@@ -22,12 +19,4 @@ body {
 
 .font-light {
   font-weight: lighter;
-}
-
-
-
-
-
-main {
-  flex: 1;
 }

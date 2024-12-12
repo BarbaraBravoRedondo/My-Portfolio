@@ -3,19 +3,18 @@
 @import 'core/fonts';
 @import './App.scss';
 
-.title{
-width: 100vw;
-background-color:rgb(107, 221, 183, 0.5);
-color:var(--overlay-background-color);
-font-weight: 800;
-text-align: center;
-border-top: $maincolor solid 4px;
-border-bottom: $maincolor solid 4px;
-box-shadow: white 3px;
-text-transform: uppercase;
-margin-top: 5%;
-letter-spacing: 10px;
-
+.title {
+  width: 100vw;
+  background-color: rgb(107, 221, 183, 0.5);
+  color: var(--overlay-background-color);
+  font-weight: 800;
+  text-align: center;
+  border-top: $maincolor solid 4px;
+  border-bottom: $maincolor solid 4px;
+  box-shadow: white 3px;
+  text-transform: uppercase;
+  margin-top: 5%;
+  letter-spacing: 10px;
 }
 .swiper-container {
   height: 100%;
@@ -39,8 +38,7 @@ letter-spacing: 10px;
       width: fit-content;
       height: fit-content;
       object-fit: cover;
-      box-shadow: rgba(131, 142, 140, 0.5)  0 0 7px 7px;
-      
+      box-shadow: rgba(131, 142, 140, 0.5) 0 0 7px 7px;
     }
   }
 
@@ -101,17 +99,16 @@ letter-spacing: 10px;
   transform: scale(1.1);
 }
 
-
 @include mobile {
   .swiper-container {
     margin: 10px 0;
-    
+
     .swiper-slide {
       .PicSlide {
         width: 80%;
       }
     }
-    
+
     .swiper-thumbs {
       display: none;
     }
@@ -131,7 +128,7 @@ letter-spacing: 10px;
 @include desktop {
   .swiper-container {
     .swiper-slide {
-      .PicSlide {   
+      .PicSlide {
         width: 60%;
       }
     }
@@ -142,37 +139,34 @@ letter-spacing: 10px;
       justify-content: center;
       align-items: center;
       padding-top: 10px;
-      margin-top: 10px;   
- 
-  .swiper-pagination {
+      margin-top: 10px;
 
-    bottom: -10px; 
+      .swiper-pagination {
+        bottom: -10px;
 
+        .swiper-pagination-bullet {
+          background-color: $maincolor;
 
-  .swiper-pagination-bullet {
-    background-color: $maincolor;  
-
-
-    width: 12px;
-    height: 12px;
-  }
-  .swiper-pagination-bullet-active {
-    background-color: darken($maincolor, 10%);  // Color ligeramente más oscuro cuando el punto está activo
-  }
-
-
-  
-
-    }
-  }
-}
-
-@include LDesktop {
-  .swiper-container {
-    .swiper-slide {
-      .PicSlide {
-        width: 50%;
+          width: 12px;
+          height: 12px;
+        }
+        .swiper-pagination-bullet-active {
+          background-color: darken(
+            $maincolor,
+            10%
+          ); 
+        }
       }
     }
   }
-}}
+
+  @include LDesktop {
+    .swiper-container {
+      .swiper-slide {
+        .PicSlide {
+          width: 50%;
+        }
+      }
+    }
+  }
+}

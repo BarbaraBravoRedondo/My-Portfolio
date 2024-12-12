@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; // Importa useState
+import { useState } from 'react';
 import projectsData from '../data/Projects';
 import TechIconos from './TechIconos';
 import '../styles/ProjectList.scss';
@@ -24,7 +24,7 @@ function ProjectList() {
     detective,
   };
 
-  // Estado para controlar el hover
+
   const [hoveredProjectId, setHoveredProjectId] = useState(null);
 
   return (
@@ -36,8 +36,8 @@ function ProjectList() {
           <div
             key={project.id}
             className="project-item"
-            onMouseEnter={() => setHoveredProjectId(project.id)} // Establece el ID del proyecto al pasar el mouse
-            onMouseLeave={() => setHoveredProjectId(null)} // Restablece el ID al salir
+            onMouseEnter={() => setHoveredProjectId(project.id)} 
+            onMouseLeave={() => setHoveredProjectId(null)} 
           >
             <img
               className="project__imgP"
@@ -74,13 +74,14 @@ function ProjectList() {
                 tecnologies={project.tecnologies}
               />
               <div className="hover-links">
-                <a className='icons-repo' href={project.github} target="_blank" rel="noreferrer">
+                <a className='icons-repo' title='Visit Github' href={project.github} target="_blank" rel="noreferrer">
                   <i className="fab fa-github"></i>
                 </a>
                 <a
                   href={project.page}
                   target="_blank"
                   rel="noopener noreferrer"
+                  title='Visit website'
                 >
                   <i className="fas fa-globe"></i>
                 </a>
