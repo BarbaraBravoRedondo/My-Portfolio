@@ -2,7 +2,7 @@
 Hi there! Welcome to my personal portfolio where I showcase my projects as a developer. I've used HTML, SASS, and Vanilla JavaScript  with REACT-Vite library.
 
 ## Quick Start Guide
-You can explore my portfolio online by visiting the following link: [siguente enlace](https://barbarabravoredondo.github.io/My-Portfolio/)
+You can explore my portfolio online by visiting the following link: [BarbaraBravoRedondo](https://barbarabravoredondo.github.io/My-Portfolio/)
 
 
 ### Local Preview
